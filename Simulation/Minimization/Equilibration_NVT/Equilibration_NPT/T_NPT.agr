@@ -1,0 +1,599 @@
+# Grace project file
+#
+@version 50125
+@page size 7920, 6120
+@page scroll 5%
+@page inout 5%
+@link page off
+@map font 8 to "Courier", "Courier"
+@map font 10 to "Courier-Bold", "Courier-Bold"
+@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
+@map font 9 to "Courier-Oblique", "Courier-Oblique"
+@map font 4 to "Helvetica", "Helvetica"
+@map font 6 to "Helvetica-Bold", "Helvetica-Bold"
+@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
+@map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
+@map font 14 to "NimbusMonoPS-BoldItalic", "NimbusMonoPS-BoldItalic"
+@map font 15 to "NimbusMonoPS-Italic", "NimbusMonoPS-Italic"
+@map font 16 to "NimbusMonoPS-Regular", "NimbusMonoPS-Regular"
+@map font 17 to "NimbusRoman-Bold", "NimbusRoman-Bold"
+@map font 18 to "NimbusRoman-BoldItalic", "NimbusRoman-BoldItalic"
+@map font 19 to "NimbusRoman-Italic", "NimbusRoman-Italic"
+@map font 20 to "NimbusRoman-Regular", "NimbusRoman-Regular"
+@map font 21 to "NimbusSans-Bold", "NimbusSans-Bold"
+@map font 22 to "NimbusSans-BoldItalic", "NimbusSans-BoldItalic"
+@map font 23 to "NimbusSans-Italic", "NimbusSans-Italic"
+@map font 24 to "NimbusSans-Regular", "NimbusSans-Regular"
+@map font 25 to "NimbusSansNarrow-Bold", "NimbusSansNarrow-Bold"
+@map font 26 to "NimbusSansNarrow-BoldOblique", "NimbusSansNarrow-BoldOblique"
+@map font 27 to "NimbusSansNarrow-Oblique", "NimbusSansNarrow-Oblique"
+@map font 28 to "NimbusSansNarrow-Regular", "NimbusSansNarrow-Regular"
+@map font 29 to "P052-Bold", "P052-Bold"
+@map font 30 to "P052-BoldItalic", "P052-BoldItalic"
+@map font 31 to "P052-Italic", "P052-Italic"
+@map font 32 to "P052-Roman", "P052-Roman"
+@map font 33 to "StandardSymbolsPS-Regular", "StandardSymbolsPS-Regular"
+@map font 12 to "Symbol", "Symbol"
+@map font 2 to "Times-Bold", "Times-Bold"
+@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
+@map font 1 to "Times-Italic", "Times-Italic"
+@map font 0 to "Times-Roman", "Times-Roman"
+@map font 39 to "URWBookman-Demi", "URWBookman-Demi"
+@map font 40 to "URWBookman-DemiItalic", "URWBookman-DemiItalic"
+@map font 41 to "URWBookman-Light", "URWBookman-Light"
+@map font 42 to "URWBookman-LightItalic", "URWBookman-LightItalic"
+@map font 43 to "URWGothic-Book", "URWGothic-Book"
+@map font 44 to "URWGothic-BookOblique", "URWGothic-BookOblique"
+@map font 45 to "URWGothic-Demi", "URWGothic-Demi"
+@map font 46 to "URWGothic-DemiOblique", "URWGothic-DemiOblique"
+@map font 47 to "Z003-MediumItalic", "Z003-MediumItalic"
+@map font 13 to "ZapfDingbats", "ZapfDingbats"
+@map color 0 to (255, 255, 255), "white"
+@map color 1 to (0, 0, 0), "black"
+@map color 2 to (255, 0, 0), "red"
+@map color 3 to (0, 255, 0), "green"
+@map color 4 to (0, 0, 255), "blue"
+@map color 5 to (255, 255, 0), "yellow"
+@map color 6 to (188, 143, 143), "brown"
+@map color 7 to (220, 220, 220), "grey"
+@map color 8 to (148, 0, 211), "violet"
+@map color 9 to (0, 255, 255), "cyan"
+@map color 10 to (255, 0, 255), "magenta"
+@map color 11 to (255, 165, 0), "orange"
+@map color 12 to (114, 33, 188), "indigo"
+@map color 13 to (103, 7, 72), "maroon"
+@map color 14 to (64, 224, 208), "turquoise"
+@map color 15 to (0, 139, 0), "green4"
+@reference date 0
+@date wrap off
+@date wrap year 1950
+@default linewidth 1.0
+@default linestyle 1
+@default color 1
+@default pattern 1
+@default font 0
+@default char size 1.000000
+@default symbol size 1.000000
+@default sformat "%.8g"
+@background color 1
+@page background fill on
+@timestamp off
+@timestamp 0.03, 0.03
+@timestamp color 0
+@timestamp rot 0
+@timestamp font 0
+@timestamp char size 1.000000
+@timestamp def "Tue Nov 11 21:58:45 2025"
+@r0 off
+@link r0 to g0
+@r0 type above
+@r0 linestyle 1
+@r0 linewidth 1.0
+@r0 color 1
+@r0 line 0, 0, 0, 0
+@r1 off
+@link r1 to g0
+@r1 type above
+@r1 linestyle 1
+@r1 linewidth 1.0
+@r1 color 1
+@r1 line 0, 0, 0, 0
+@r2 off
+@link r2 to g0
+@r2 type above
+@r2 linestyle 1
+@r2 linewidth 1.0
+@r2 color 1
+@r2 line 0, 0, 0, 0
+@r3 off
+@link r3 to g0
+@r3 type above
+@r3 linestyle 1
+@r3 linewidth 1.0
+@r3 color 1
+@r3 line 0, 0, 0, 0
+@r4 off
+@link r4 to g0
+@r4 type above
+@r4 linestyle 1
+@r4 linewidth 1.0
+@r4 color 1
+@r4 line 0, 0, 0, 0
+@g0 on
+@g0 hidden false
+@g0 type XY
+@g0 stacked false
+@g0 bar hgap 0.000000
+@g0 fixedpoint off
+@g0 fixedpoint type 0
+@g0 fixedpoint xy 0.000000, 0.000000
+@g0 fixedpoint format general general
+@g0 fixedpoint prec 6, 6
+@with g0
+@    world 50000, 294, 100000, 304
+@    stack world 0, 0, 0, 0
+@    znorm 1
+@    view 0.150000, 0.150000, 1.150000, 0.850000
+@    title "TEMPERATURE vs TS"
+@    title font 0
+@    title size 1.990000
+@    title color 0
+@    subtitle "Equilibration NPT"
+@    subtitle font 0
+@    subtitle size 1.340000
+@    subtitle color 0
+@    xaxes scale Normal
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  type zero false
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar on
+@    xaxis  bar color 0
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 1.0
+@    xaxis  label "TS"
+@    xaxis  label layout para
+@    xaxis  label place auto
+@    xaxis  label char size 1.000000
+@    xaxis  label font 0
+@    xaxis  label color 0
+@    xaxis  label place normal
+@    xaxis  tick on
+@    xaxis  tick major 10000
+@    xaxis  tick minor ticks 1
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 1.000000
+@    xaxis  tick major color 0
+@    xaxis  tick major linewidth 1.0
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor color 0
+@    xaxis  tick minor linewidth 1.0
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick minor grid off
+@    xaxis  tick minor size 0.500000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel format general
+@    xaxis  ticklabel prec 5
+@    xaxis  ticklabel formula ""
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 0
+@    xaxis  ticklabel place normal
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 1.000000
+@    xaxis  ticklabel font 0
+@    xaxis  ticklabel color 0
+@    xaxis  tick place both
+@    xaxis  tick spec type both
+@    xaxis  tick spec 11
+@    xaxis  tick major 0, 50000
+@    xaxis  ticklabel 0, "50000"
+@    xaxis  tick minor 1, 55000
+@    xaxis  tick major 2, 60000
+@    xaxis  ticklabel 2, "60000"
+@    xaxis  tick minor 3, 65000
+@    xaxis  tick major 4, 70000
+@    xaxis  ticklabel 4, "70000"
+@    xaxis  tick minor 5, 75000
+@    xaxis  tick major 6, 80000
+@    xaxis  ticklabel 6, "80000"
+@    xaxis  tick minor 7, 85000
+@    xaxis  tick major 8, 90000
+@    xaxis  ticklabel 8, "90000"
+@    xaxis  tick minor 9, 95000
+@    xaxis  tick major 10, 100000
+@    xaxis  ticklabel 10, "1e+05"
+@    yaxis  on
+@    yaxis  type zero false
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar on
+@    yaxis  bar color 0
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 1.0
+@    yaxis  label "Temprerature"
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.000000
+@    yaxis  label font 0
+@    yaxis  label color 0
+@    yaxis  label place normal
+@    yaxis  tick on
+@    yaxis  tick major 2
+@    yaxis  tick minor ticks 1
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 1.000000
+@    yaxis  tick major color 0
+@    yaxis  tick major linewidth 1.0
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor color 0
+@    yaxis  tick minor linewidth 1.0
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick minor grid off
+@    yaxis  tick minor size 0.500000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel format general
+@    yaxis  ticklabel prec 5
+@    yaxis  ticklabel formula ""
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel place normal
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.000000 , 0.010000
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 0
+@    yaxis  ticklabel color 0
+@    yaxis  tick place both
+@    yaxis  tick spec type none
+@    altxaxis  off
+@    altyaxis  off
+@    legend on
+@    legend loctype view
+@    legend 0.85, 0.8
+@    legend box color 0
+@    legend box pattern 1
+@    legend box linewidth 1.0
+@    legend box linestyle 1
+@    legend box fill color 0
+@    legend box fill pattern 0
+@    legend font 0
+@    legend char size 1.000000
+@    legend color 0
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    legend invert false
+@    frame type 0
+@    frame linestyle 1
+@    frame linewidth 1.0
+@    frame color 0
+@    frame pattern 1
+@    frame background color 0
+@    frame background pattern 0
+@    s0 hidden false
+@    s0 type xy
+@    s0 symbol 0
+@    s0 symbol size 1.000000
+@    s0 symbol color 2
+@    s0 symbol pattern 1
+@    s0 symbol fill color 2
+@    s0 symbol fill pattern 0
+@    s0 symbol linewidth 1.0
+@    s0 symbol linestyle 1
+@    s0 symbol char 65
+@    s0 symbol char font 0
+@    s0 symbol skip 0
+@    s0 line type 1
+@    s0 line linestyle 1
+@    s0 line linewidth 1.0
+@    s0 line color 2
+@    s0 line pattern 1
+@    s0 baseline type 0
+@    s0 baseline off
+@    s0 dropline off
+@    s0 fill type 0
+@    s0 fill rule 0
+@    s0 fill color 1
+@    s0 fill pattern 1
+@    s0 avalue off
+@    s0 avalue type 2
+@    s0 avalue char size 1.000000
+@    s0 avalue font 0
+@    s0 avalue color 1
+@    s0 avalue rot 0
+@    s0 avalue format general
+@    s0 avalue prec 3
+@    s0 avalue prepend ""
+@    s0 avalue append ""
+@    s0 avalue offset 0.000000 , 0.000000
+@    s0 errorbar on
+@    s0 errorbar place both
+@    s0 errorbar color 2
+@    s0 errorbar pattern 1
+@    s0 errorbar size 1.000000
+@    s0 errorbar linewidth 1.0
+@    s0 errorbar linestyle 1
+@    s0 errorbar riser linewidth 1.0
+@    s0 errorbar riser linestyle 1
+@    s0 errorbar riser clip off
+@    s0 errorbar riser clip length 0.100000
+@    s0 comment "/home/modelling/Project/Simulation/Minimization/Equilibration_NVT/Equilibration_NPT/T_NPT.agr"
+@    s0 legend  "TEMP"
+@    s1 hidden false
+@    s1 type xy
+@    s1 symbol 0
+@    s1 symbol size 1.000000
+@    s1 symbol color 9
+@    s1 symbol pattern 1
+@    s1 symbol fill color 9
+@    s1 symbol fill pattern 0
+@    s1 symbol linewidth 1.0
+@    s1 symbol linestyle 1
+@    s1 symbol char 65
+@    s1 symbol char font 0
+@    s1 symbol skip 0
+@    s1 line type 1
+@    s1 line linestyle 1
+@    s1 line linewidth 3.0
+@    s1 line color 9
+@    s1 line pattern 1
+@    s1 baseline type 0
+@    s1 baseline off
+@    s1 dropline off
+@    s1 fill type 0
+@    s1 fill rule 0
+@    s1 fill color 1
+@    s1 fill pattern 1
+@    s1 avalue off
+@    s1 avalue type 2
+@    s1 avalue char size 1.000000
+@    s1 avalue font 0
+@    s1 avalue color 1
+@    s1 avalue rot 0
+@    s1 avalue format general
+@    s1 avalue prec 3
+@    s1 avalue prepend ""
+@    s1 avalue append ""
+@    s1 avalue offset 0.000000 , 0.000000
+@    s1 errorbar on
+@    s1 errorbar place both
+@    s1 errorbar color 9
+@    s1 errorbar pattern 1
+@    s1 errorbar size 1.000000
+@    s1 errorbar linewidth 1.0
+@    s1 errorbar linestyle 1
+@    s1 errorbar riser linewidth 1.0
+@    s1 errorbar riser linestyle 1
+@    s1 errorbar riser clip off
+@    s1 errorbar riser clip length 0.100000
+@    s1 comment "/home/modelling/Project/Simulation/Minimization/Equilibration_NVT/Equilibration_NPT/T_NPT.agr"
+@    s1 legend  "TEMPAVG"
+@target G0.S0
+@type xy
+50000 295.9258
+50500 302.8259
+51000 301.0408
+51500 300.7907
+52000 300.6407
+52500 300.7073
+53000 299.6101
+53500 300.4767
+54000 299.5383
+54500 296.3828
+55000 296.332
+55500 298.7744
+56000 297.8614
+56500 299.6633
+57000 298.8432
+57500 295.6216
+58000 299.1647
+58500 299.2936
+59000 296.5392
+59500 301.452
+60000 300.5424
+60500 299.3582
+61000 300.009
+61500 298.1084
+62000 301.1594
+62500 298.1148
+63000 299.9361
+63500 299.6567
+64000 298.6957
+64500 300.093
+65000 300.1859
+65500 299.2682
+66000 298.2984
+66500 299.7154
+67000 301.1505
+67500 297.5057
+68000 300.3155
+68500 302.1089
+69000 301.5033
+69500 298.7232
+70000 297.2906
+70500 297.696
+71000 301.0987
+71500 299.422
+72000 299.9179
+72500 300.3061
+73000 296.1119
+73500 303.4252
+74000 298.2339
+74500 300.837
+75000 294.7408
+75500 297.2391
+76000 302.0566
+76500 299.8534
+77000 300.3606
+77500 296.8803
+78000 299.7742
+78500 300.8709
+79000 298.9845
+79500 302.7999
+80000 296.3145
+80500 296.8112
+81000 303.9073
+81500 302.24
+82000 300.0423
+82500 299.9118
+83000 298.2225
+83500 299.5569
+84000 300.4762
+84500 300.2134
+85000 301.8774
+85500 299.4828
+86000 298.768
+86500 301.0031
+87000 299.8756
+87500 302.2588
+88000 296.1842
+88500 297.0138
+89000 301.0452
+89500 298.8677
+90000 297.5978
+90500 300.0749
+91000 297.6309
+91500 296.8458
+92000 300.1413
+92500 295.7755
+93000 298.8314
+93500 296.5142
+94000 300.6778
+94500 298.429
+95000 297.8008
+95500 295.105
+96000 297.9565
+96500 297.5049
+97000 295.6876
+97500 300.4746
+98000 301.0848
+98500 299.9866
+99000 299.9137
+99500 300.9836
+100000 298.9503
+&
+@target G0.S1
+@type xy
+50000 295.9258
+50500 301.9593
+51000 302.1482
+51500 298.6172
+52000 299.3005
+52500 299.6141
+53000 299.0078
+53500 298.9478
+54000 299.3248
+54500 298.5771
+55000 298.3389
+55500 299.2391
+56000 298.726
+56500 299.2652
+57000 297.7723
+57500 298.0752
+58000 298.096
+58500 299.1467
+59000 298.6512
+59500 299.1564
+60000 299.987
+60500 300.45
+61000 298.8844
+61500 298.35
+62000 299.7173
+62500 299.2746
+63000 298.8093
+63500 299.2169
+64000 299.6252
+64500 299.4583
+65000 300.3815
+65500 298.7713
+66000 299.7662
+66500 299.9186
+67000 298.4378
+67500 299.225
+68000 300.6099
+68500 301.3033
+69000 300.0545
+69500 300.9342
+70000 299.3952
+70500 297.3601
+71000 298.8133
+71500 298.0921
+72000 298.5412
+72500 299.0781
+73000 297.8268
+73500 298.5388
+74000 297.7296
+74500 298.3225
+75000 297.8859
+75500 297.3566
+76000 299.5109
+76500 300.8778
+77000 299.2449
+77500 298.616
+78000 298.0528
+78500 299.4386
+79000 298.2454
+79500 299.3125
+80000 297.8866
+80500 298.8532
+81000 299.9905
+81500 301.4613
+82000 300.798
+82500 300.5124
+83000 299.4782
+83500 300.0872
+84000 299.6567
+84500 299.4801
+85000 299.7235
+85500 299.9424
+86000 299.2789
+86500 300.2297
+87000 299.759
+87500 299.3172
+88000 298.2748
+88500 298.1556
+89000 298.5265
+89500 299.6753
+90000 299.0904
+90500 298.2573
+91000 298.8625
+91500 296.7068
+92000 298.3642
+92500 299.85
+93000 298.23
+93500 299.0889
+94000 300.5467
+94500 300.3714
+95000 299.4116
+95500 298.3805
+96000 297.0512
+96500 297.9515
+97000 297.8517
+97500 298.1223
+98000 298.5986
+98500 298.7695
+99000 298.6255
+99500 300.3941
+100000 301.0426
+&
