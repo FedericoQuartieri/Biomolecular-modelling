@@ -1,9 +1,0 @@
-package require psfgen
-topology top_all27_prot_lipid.inp
-pdbalias residue HIS HSP
-pdbalias atom ILE CD1 CD
-segment U {pdb 2PYP_pronto.pdb}
-coordpdb 2PYP_pronto.pdb U
-guesscoord
-writepdb 2PYP_namd.pdb
-writepsf 2PYP_namd.psf

@@ -1,0 +1,3 @@
+# NAMD extended system configuration restart file
+#$LABELS step a_x a_y a_z b_x b_y b_z c_x c_y c_z o_x o_y o_z s_x s_y s_z s_u s_v s_w
+200000 58.2876729708 0 0 0 59.9373332352 0 0 0 60.7384593685 18.9173088074 2.16778659821 -10.9974927902 -2.07428739048e-05 -2.07428739048e-05 -2.07428739048e-05 0 0 0
