@@ -1,2 +1,5 @@
 foldX
-.dcd
+runs_*/**
+!runs_*/**/
+!runs_*/**/*.conf
+!runs_*/**/*.log
