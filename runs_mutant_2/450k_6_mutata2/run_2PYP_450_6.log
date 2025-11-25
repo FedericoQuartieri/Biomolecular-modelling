@@ -1,0 +1,2259 @@
+Running command: /home/danielesalvi/NAMD_2.14_Linux-x86_64-multicore-CUDA/namd2 +p8 2PYP_450k_6_mutata2.conf
+
+Charm++: standalone mode (not using charmrun)
+Charm++> Running in Multicore mode: 8 threads (PEs)
+Charm++> Using recursive bisection (scheme 3) for topology aware partitions
+Converse/Charm++ Commit ID: v6.10.2-0-g7bf00fa-namd-charm-6.10.2-build-2020-Aug-05-556
+Warning> Randomization of virtual memory (ASLR) is turned on in the kernel, thread migration may not work! Run 'echo 0 > /proc/sys/kernel/randomize_va_space' as root to disable it, or try running with '+isomalloc_sync'.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 1 hosts (1 sockets x 8 cores x 2 PUs = 16-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Info: Built with CUDA version 10010
+Did not find +devices i,j,k,... argument, using all
+Pe 0 physical rank 0 will use CUDA device of pe 4
+Pe 3 physical rank 3 will use CUDA device of pe 4
+Pe 1 physical rank 1 will use CUDA device of pe 4
+Pe 7 physical rank 7 will use CUDA device of pe 4
+Pe 5 physical rank 5 will use CUDA device of pe 4
+Pe 2 physical rank 2 will use CUDA device of pe 4
+Pe 6 physical rank 6 will use CUDA device of pe 4
+Pe 4 physical rank 4 binding to CUDA device 0 on LAPTOP-6I2779MK: 'NVIDIA GeForce RTX 4060 Laptop GPU'  Mem: 8187MB  Rev: 8.9  PCI: 0:1:0
+Info: NAMD 2.14 for Linux-x86_64-multicore-CUDA
+Info: 
+Info: Please visit http://www.ks.uiuc.edu/Research/namd/
+Info: for updates, documentation, and support information.
+Info: 
+Info: Please cite Phillips et al., J. Chem. Phys. 153:044130 (2020) doi:10.1063/5.0014475
+Info: in all publications reporting results obtained with NAMD.
+Info: 
+Info: Based on Charm++/Converse 61002 for multicore-linux-x86_64-iccstatic
+Info: Built Mon Aug 24 10:10:58 CDT 2020 by jim on belfast.ks.uiuc.edu
+Info: 1 NAMD  2.14  Linux-x86_64-multicore-CUDA  8    LAPTOP-6I2779MK  danielesalvi
+Info: Running on 8 processors, 1 nodes, 1 physical nodes.
+Info: CPU topology information available.
+Info: Charm++/Converse parallel runtime startup completed at 5.50037 s
+CkLoopLib is used in SMP with simple dynamic scheduling (converse-level notification)
+Info: 546.469 MB of memory in use based on /proc/self/stat
+Info: Configuration file is 2PYP_450k_6_mutata2.conf
+Info: Working in the current directory /mnt/c/Users/danie/Biomolecular-modelling/runs_mutant_2/450k_6_mutata2
+TCL: Suspending until startup complete.
+Info: EXTENDED SYSTEM FILE   ../../input_mutant_2/2PYP_mutata2_final.xsc
+Info: SIMULATION PARAMETERS:
+Info: TIMESTEP               2
+Info: NUMBER OF STEPS        200000
+Info: STEPS PER CYCLE        10
+Info: PERIODIC CELL BASIS 1  59.1391 0 0
+Info: PERIODIC CELL BASIS 2  0 63.1519 0
+Info: PERIODIC CELL BASIS 3  0 0 60.2599
+Info: PERIODIC CELL CENTER   18.4185 3.7149 -11.2402
+Info: WRAPPING ALL CLUSTERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: LOAD BALANCER  Centralized
+Info: LOAD BALANCING STRATEGY  New Load Balancers -- DEFAULT
+Info: LDB PERIOD             2000 steps
+Info: FIRST LDB TIMESTEP     50
+Info: LAST LDB TIMESTEP     -1
+Info: LDB BACKGROUND SCALING 1
+Info: HOM BACKGROUND SCALING 1
+Info: PME BACKGROUND SCALING 1
+Info: MIN ATOMS PER PATCH    40
+Info: INITIAL TEMPERATURE    450
+Info: CENTER OF MASS MOVING INITIALLY? NO
+Info: DIELECTRIC             1
+Info: EXCLUDE                SCALED ONE-FOUR
+Info: 1-4 ELECTROSTATICS SCALED BY 1
+Info: MODIFIED 1-4 VDW PARAMETERS WILL BE USED
+Info: DCD FILENAME           450k_6_mutata2.dcd
+Info: DCD FREQUENCY          2000
+Info: DCD FIRST STEP         2000
+Info: DCD FILE WILL CONTAIN UNIT CELL DATA
+Info: XST FILENAME           450k_6_mutata2.xst
+Info: XST FREQUENCY          2000
+Info: NO VELOCITY DCD OUTPUT
+Info: NO FORCE DCD OUTPUT
+Info: OUTPUT FILENAME        450k_6_mutata2
+Info: BINARY OUTPUT FILES WILL BE USED
+Info: RESTART FILENAME       450k_6_mutata2.restart
+Info: RESTART FREQUENCY      100000
+Info: BINARY RESTART FILES WILL BE USED
+Info: SWITCHING ACTIVE
+Info: SWITCHING ON           10
+Info: SWITCHING OFF          12
+Info: PAIRLIST DISTANCE      14
+Info: PAIRLIST SHRINK RATE   0.01
+Info: PAIRLIST GROW RATE     0.01
+Info: PAIRLIST TRIGGER       0.3
+Info: PAIRLISTS PER CYCLE    2
+Info: PAIRLISTS ENABLED
+Info: MARGIN                 0.495
+Info: HYDROGEN GROUP CUTOFF  2.5
+Info: PATCH DIMENSION        16.995
+Info: ENERGY OUTPUT STEPS    2000
+Info: CROSSTERM ENERGY INCLUDED IN DIHEDRAL
+Info: TIMING OUTPUT STEPS    2000
+Info: PRESSURE OUTPUT STEPS  2000
+Info: LANGEVIN DYNAMICS ACTIVE
+Info: LANGEVIN TEMPERATURE   450
+Info: LANGEVIN USING BBK INTEGRATOR
+Info: LANGEVIN DAMPING COEFFICIENT IS 5 INVERSE PS
+Info: LANGEVIN DYNAMICS NOT APPLIED TO HYDROGENS
+Info: LANGEVIN PISTON PRESSURE CONTROL ACTIVE
+Info:        TARGET PRESSURE IS 1.01325 BAR
+Info:     OSCILLATION PERIOD IS 200 FS
+Info:             DECAY TIME IS 100 FS
+Info:     PISTON TEMPERATURE IS 450 K
+Info:       PRESSURE CONTROL IS GROUP-BASED
+Info:    INITIAL STRAIN RATE IS -1.92523e-05 -1.92523e-05 -1.92523e-05
+Info:       CELL FLUCTUATION IS ISOTROPIC
+Info: PARTICLE MESH EWALD (PME) ACTIVE
+Info: PME TOLERANCE               1e-06
+Info: PME EWALD COEFFICIENT       0.257952
+Info: PME INTERPOLATION ORDER     4
+Info: PME GRID DIMENSIONS         60 64 64
+Info: PME MAXIMUM GRID SPACING    1
+Info: Attempting to read FFTW data from FFTW_NAMD_2.14_Linux-x86_64-multicore-CUDA.txt
+Info: Optimizing 6 FFT steps.  1... 2... 3... 4... 5... 6...   Done.
+Info: Writing FFTW data to FFTW_NAMD_2.14_Linux-x86_64-multicore-CUDA.txt
+Info: FULL ELECTROSTATIC EVALUATION FREQUENCY      2
+Info: USING VERLET I (r-RESPA) MTS SCHEME.
+Info: C1 SPLITTING OF LONG RANGE ELECTROSTATICS
+Info: PLACING ATOMS IN PATCHES BY HYDROGEN GROUPS
+Info: RIGID BONDS TO HYDROGEN : ALL
+Info:         ERROR TOLERANCE : 1e-08
+Info:          MAX ITERATIONS : 100
+Info: RIGID WATER USING SETTLE ALGORITHM
+Info: RANDOM NUMBER SEED     745
+Info: USE HYDROGEN BONDS?    NO
+Info: COORDINATE PDB         ../../input_mutant_2/2PYP_mutata2_ionized.pdb
+Info: STRUCTURE FILE         ../../input_mutant_2/2PYP_mutata2_ionized.psf
+Info: PARAMETER file: CHARMM format! 
+Info: PARAMETERS             ../../input_mutant_2/par_all27_prot_lipid.inp
+Info: USING ARITHMETIC MEAN TO COMBINE L-J SIGMA PARAMETERS
+Info: BINARY COORDINATES     ../../input_mutant_2/2PYP_mutata2_final.coor
+Info: SUMMARY OF PARAMETERS:
+Info: 180 BONDS
+Info: 447 ANGLES
+Info: 566 DIHEDRAL
+Info: 46 IMPROPER
+Info: 6 CROSSTERM
+Info: 119 VDW
+Info: 0 VDW_PAIRS
+Info: 0 NBTHOLE_PAIRS
+Info: TIME FOR READING PSF FILE: 0.247165
+Info: Reading pdb file ../../input_mutant_2/2PYP_mutata2_ionized.pdb
+Info: TIME FOR READING PDB FILE: 0.124747
+Info: 
+Info: ****************************
+Info: STRUCTURE SUMMARY:
+Info: 23087 ATOMS
+Info: 16069 BONDS
+Info: 10621 ANGLES
+Info: 5232 DIHEDRALS
+Info: 327 IMPROPERS
+Info: 121 CROSSTERMS
+Info: 0 EXCLUSIONS
+Info: 22087 RIGID BONDS
+Info: 47174 DEGREES OF FREEDOM
+Info: 8039 HYDROGEN GROUPS
+Info: 4 ATOMS IN LARGEST HYDROGEN GROUP
+Info: 8039 MIGRATION GROUPS
+Info: 4 ATOMS IN LARGEST MIGRATION GROUP
+Info: TOTAL MASS = 141020 amu
+Info: TOTAL CHARGE = 1.76765e-06 e
+Info: MASS DENSITY = 1.04052 g/cm^3
+Info: ATOM DENSITY = 0.102584 atoms/A^3
+Info: *****************************
+Info: Reading from binary file ../../input_mutant_2/2PYP_mutata2_final.coor
+Info: 
+Info: Entering startup at 24.4658 s, 556.094 MB of memory in use
+Info: Startup phase 0 took 0.000381686 s, 556.094 MB of memory in use
+Info: ADDED 31842 IMPLICIT EXCLUSIONS
+Info: Startup phase 1 took 0.0125538 s, 559.844 MB of memory in use
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 769 POINTS
+Info: ABSOLUTE IMPRECISION IN FAST TABLE FORCE: 2.64698e-23 AT 11.9138
+Info: RELATIVE IMPRECISION IN FAST TABLE FORCE: 1.40436e-16 AT 11.9138
+Info: INCONSISTENCY IN FAST TABLE ENERGY VS FORCE: 0.000325096 AT 11.9556
+Info: ABSOLUTE IMPRECISION IN SCOR TABLE FORCE: 4.10282e-22 AT 11.9138
+Info: RELATIVE IMPRECISION IN SCOR TABLE FORCE: 3.56912e-15 AT 11.9138
+Info: INCONSISTENCY IN SCOR TABLE ENERGY VS FORCE: 0.000324844 AT 11.9556
+Info: ABSOLUTE IMPRECISION IN VDWA TABLE ENERGY: 9.86076e-32 AT 11.8295
+Info: RELATIVE IMPRECISION IN VDWA TABLE ENERGY: 6.75473e-14 AT 11.9138
+Info: ABSOLUTE IMPRECISION IN VDWA TABLE FORCE: 4.62223e-32 AT 11.9138
+Info: RELATIVE IMPRECISION IN VDWA TABLE FORCE: 2.12237e-15 AT 11.9138
+Info: INCONSISTENCY IN VDWA TABLE ENERGY VS FORCE: 0.0040507 AT 0.251946
+Info: ABSOLUTE IMPRECISION IN VDWB TABLE ENERGY: 4.1359e-25 AT 11.8295
+Info: RELATIVE IMPRECISION IN VDWB TABLE ENERGY: 7.56853e-15 AT 11.9138
+Info: ABSOLUTE IMPRECISION IN VDWB TABLE FORCE: 3.87741e-26 AT 11.9138
+Info: RELATIVE IMPRECISION IN VDWB TABLE FORCE: 5.97409e-16 AT 11.9138
+Info: INCONSISTENCY IN VDWB TABLE ENERGY VS FORCE: 0.00150189 AT 0.251946
+Info: Startup phase 2 took 0.00213059 s, 560.719 MB of memory in use
+Info: Startup phase 3 took 0.000449305 s, 560.719 MB of memory in use
+Info: Startup phase 4 took 0.000829478 s, 562.219 MB of memory in use
+Info: Startup phase 5 took 0.00046796 s, 562.219 MB of memory in use
+Info: PATCH GRID IS 3 (PERIODIC) BY 3 (PERIODIC) BY 3 (PERIODIC)
+Info: PATCH GRID IS 1-AWAY BY 1-AWAY BY 1-AWAY
+Info: REMOVING COM VELOCITY 0.0200136 0.0111084 -0.025752
+Info: LARGEST PATCH (12) HAS 905 ATOMS
+Info: TORUS A SIZE 1 USING 0
+Info: TORUS B SIZE 1 USING 0
+Info: TORUS C SIZE 1 USING 0
+Info: TORUS MINIMAL MESH SIZE IS 1 BY 1 BY 1
+Info: Placed 100% of base nodes on same physical node as patch
+Info: Startup phase 6 took 0.0116536 s, 566.844 MB of memory in use
+Info: PME using 1 x 1 x 1 pencil grid for FFT and reciprocal sum.
+Info: Startup phase 7 took 0.000450046 s, 567.094 MB of memory in use
+Info: Updated CUDA force table with 4096 elements.
+Info: Updated CUDA LJ table with 119 x 119 elements.
+Info: Startup phase 8 took 0.0024938 s, 567.219 MB of memory in use
+Info: Startup phase 9 took 0.00016825 s, 567.219 MB of memory in use
+Info: Startup phase 10 took 0.000243183 s, 567.219 MB of memory in use
+Info: Startup phase 11 took 0.00694038 s, 569.344 MB of memory in use
+LDB: Central LB being created...
+Info: Startup phase 12 took 0.00407213 s, 569.594 MB of memory in use
+Info: CREATING 631 COMPUTE OBJECTS
+Info: Found 272 unique exclusion lists needing 848 bytes
+Info: useSync: 0 useProxySync: 0
+Info: Startup phase 13 took 0.0215003 s, 570.969 MB of memory in use
+Info: Startup phase 14 took 0.000647882 s, 570.969 MB of memory in use
+Info: Startup phase 15 took 0.000131525 s, 571.094 MB of memory in use
+Info: Finished startup at 24.5309 s, 571.094 MB of memory in use
+
+REINITIALIZING VELOCITIES AT STEP 0 TO 450 KELVIN.
+PRESSURE: 0 1140 -17.1822 80.5663 -17.1811 1011.41 24.7018 80.5656 24.7067 929.798
+GPRESSURE: 0 1188.31 -224.596 116.336 0.674783 968.011 23.6451 66.0692 217.103 1016.06
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:       0       413.0961      1063.3539       518.0864        65.8009         -81940.8067      6741.5240         0.0000         0.0000     20969.7866         -52169.1588       447.3853    -73138.9454    -52121.7048       447.3853           1027.0684      1057.4596    225055.5131      1027.0684      1057.4596
+
+OPENING EXTENDED SYSTEM TRAJECTORY FILE
+LDB: ============= START OF LOAD BALANCING ============== 25.1719
+LDB: ============== END OF LOAD BALANCING =============== 25.172
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 25.1721
+LDB: ============= START OF LOAD BALANCING ============== 27.4638
+LDB: Partitioning computes with target load 0.000000
+LDB: Increased migratable compute count from 0 to 0
+LDB: Largest unpartitionable compute is 0.000000
+LDB: ============== END OF LOAD BALANCING =============== 27.4642
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 27.4647
+Info: Initial time: 8 CPUs 0.0579857 s/step 0.335566 days/ns 593.844 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 28.0488
+LDB: ============== END OF LOAD BALANCING =============== 28.049
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 28.0492
+LDB: ============= START OF LOAD BALANCING ============== 30.3031
+LDB: TIME 30.3033 LOAD: AVG 0.0762426 MAX 0.250557  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 594.094 MB
+LDB: TIME 30.3034 LOAD: AVG 0.0762426 MAX 0.250557  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 TorusLB MEM: 594.094 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 30.3035
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 30.304
+Info: Initial time: 8 CPUs 0.0565394 s/step 0.327196 days/ns 594.094 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 32.4274
+LDB: TIME 32.4277 LOAD: AVG 0.0971159 MAX 0.271289  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 594.219 MB
+LDB: TIME 32.4278 LOAD: AVG 0.0971159 MAX 0.271289  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 594.219 MB
+LDB: TIME 32.4278 LOAD: AVG 0.0971159 MAX 0.271289  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 594.219 MB
+LDB: ============== END OF LOAD BALANCING =============== 32.4279
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 32.4288
+Info: Initial time: 8 CPUs 0.0413701 s/step 0.23941 days/ns 594.219 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 33.1148
+LDB: TIME 33.1151 LOAD: AVG 0.0880219 MAX 0.180498  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 594.219 MB
+LDB: TIME 33.1152 LOAD: AVG 0.0880219 MAX 0.180498  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 594.219 MB
+LDB: TIME 33.1153 LOAD: AVG 0.0880219 MAX 0.180498  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 594.219 MB
+LDB: ============== END OF LOAD BALANCING =============== 33.1154
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 33.1159
+Info: Benchmark time: 8 CPUs 0.0132893 s/step 0.0769057 days/ns 594.219 MB memory
+Info: Benchmark time: 8 CPUs 0.0096412 s/step 0.055794 days/ns 594.344 MB memory
+Info: Benchmark time: 8 CPUs 0.00743844 s/step 0.0430465 days/ns 594.344 MB memory
+Info: Benchmark time: 8 CPUs 0.00630115 s/step 0.036465 days/ns 594.469 MB memory
+Info: Benchmark time: 8 CPUs 0.00718997 s/step 0.0416086 days/ns 594.469 MB memory
+Info: Benchmark time: 8 CPUs 0.026991 s/step 0.156198 days/ns 594.469 MB memory
+PRESSURE: 2000 -17.582 -87.533 169.225 -87.5319 150.735 9.71738 169.226 9.71775 -174.673
+GPRESSURE: 2000 -66.553 -36.9116 115.953 -38.6192 173.163 72.1299 160.402 138.792 -82.4852
+PRESSAVG: 2000 -9.82819 -15.9113 -4.8064 -15.9113 8.09899 18.8658 -4.80638 18.8658 36.5983
+GPRESSAVG: 2000 -9.83058 -15.9734 -4.73031 -15.436 8.0096 19.4228 -4.77032 19.2208 36.4997
+TIMING: 2000  CPU: 52.8599, 0.0263624/step  Wall: 53.6943, 0.0267714/step, 1.47243 hours remaining, 596.218750 MB of memory in use.
+ENERGY:    2000       553.8496      1465.2018       600.1010        98.4443         -65991.0366      4333.3326         0.0000         0.0000     20887.8879         -38052.2195       445.6380    -58940.1074    -37989.8718       429.2265            -13.8400         8.0416    268058.8378        11.6230        11.5596
+
+OPENING COORDINATE DCD FILE
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 2000
+The last position output (seq=2000) takes 0.059 seconds, 596.219 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 83.4349
+LDB: ============== END OF LOAD BALANCING =============== 83.435
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 83.4351
+LDB: ============= START OF LOAD BALANCING ============== 86.0957
+LDB: TIME 86.0961 LOAD: AVG 0.0977797 MAX 0.289644  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 596.719 MB
+LDB: TIME 86.0963 LOAD: AVG 0.0977797 MAX 0.289644  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 596.719 MB
+LDB: TIME 86.0964 LOAD: AVG 0.0977797 MAX 0.289644  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 596.719 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 86.0971
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 86.1005
+PRESSURE: 4000 -336.626 -225.369 40.9207 -225.367 75.5707 -94.656 40.9202 -94.6546 -293.302
+GPRESSURE: 4000 -312.222 -212.806 -39.9891 -116.265 124.151 27.8019 -37.189 8.13199 -281.428
+PRESSAVG: 4000 -10.6668 -9.22347 3.70995 -9.22343 1.51255 10.0349 3.70993 10.0349 2.49472
+GPRESSAVG: 4000 -11.0715 -9.24887 3.81822 -9.2895 1.29043 10.2071 3.50715 9.83029 2.49155
+TIMING: 4000  CPU: 105.417, 0.0262785/step  Wall: 106.879, 0.0265922/step, 1.4478 hours remaining, 596.968750 MB of memory in use.
+ENERGY:    4000       553.9296      1551.6753       588.2862        96.3559         -65907.9193      4255.8477         0.0000         0.0000     21044.9533         -37816.8715       448.9889    -58861.8247    -37776.8230       449.7852           -184.7858      -156.4998    270032.5233        -2.2198        -2.4298
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 4000
+The last position output (seq=4000) takes 0.005 seconds, 596.969 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 138.129
+LDB: ============== END OF LOAD BALANCING =============== 138.129
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 138.129
+LDB: ============= START OF LOAD BALANCING ============== 138.752
+LDB: TIME 138.752 LOAD: AVG 0.0935056 MAX 0.201409  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 597.344 MB
+LDB: TIME 138.752 LOAD: AVG 0.0935056 MAX 0.201409  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 597.344 MB
+LDB: TIME 138.752 LOAD: AVG 0.0935056 MAX 0.201409  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 597.344 MB
+LDB: ============== END OF LOAD BALANCING =============== 138.752
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 138.752
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 6000
+The last position output (seq=6000) takes 0.033 seconds, 597.719 MB of memory in use
+PRESSURE: 6000 467.789 133.84 216.127 133.843 -260.522 -23.2385 216.126 -23.239 33.3614
+GPRESSURE: 6000 402.357 120.005 220.711 229.012 -189.893 -168.213 215.687 -9.31196 133.641
+PRESSAVG: 6000 -23.3723 5.57731 13.7559 5.57729 7.24681 4.35108 13.7559 4.35113 20.0985
+GPRESSAVG: 6000 -23.2234 5.72206 14.27 5.54391 7.65126 3.86891 13.5039 4.68236 19.8356
+TIMING: 6000  CPU: 186.717, 0.0406498/step  Wall: 217.622, 0.0553716/step, 2.98391 hours remaining, 597.718750 MB of memory in use.
+ENERGY:    6000       564.7815      1462.9739       610.5529        98.8108         -65777.6014      4414.3791         0.0000         0.0000     21048.7498         -37577.3534       449.0699    -58626.1031    -37532.7533       449.8889             80.2095       115.3683    272334.6925         1.3243         1.4212
+
+LDB: ============= START OF LOAD BALANCING ============== 253.961
+LDB: ============== END OF LOAD BALANCING =============== 253.965
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 253.977
+LDB: ============= START OF LOAD BALANCING ============== 257.766
+LDB: TIME 257.773 LOAD: AVG 0.102756 MAX 0.277255  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 597.719 MB
+LDB: TIME 257.774 LOAD: AVG 0.102756 MAX 0.277255  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 597.719 MB
+LDB: TIME 257.774 LOAD: AVG 0.102756 MAX 0.277255  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 597.719 MB
+LDB: ============== END OF LOAD BALANCING =============== 257.787
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 257.842
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 8000
+The last position output (seq=8000) takes 0.015 seconds, 597.719 MB of memory in use
+PRESSURE: 8000 239.122 96.4204 -13.7053 96.4194 486.544 -171.502 -13.7037 -171.503 439.497
+GPRESSURE: 8000 344.984 58.3485 31.7186 62.6109 476.912 -354.413 -79.2512 -136.708 427.788
+PRESSAVG: 8000 16.6383 -2.61926 20.6235 -2.61925 -35.0673 -9.83057 20.6234 -9.83063 11.7451
+GPRESSAVG: 8000 16.7023 -2.04353 20.2373 -2.86559 -35.3116 -9.88267 20.7071 -9.68041 11.6202
+TIMING: 8000  CPU: 291.901, 0.0525921/step  Wall: 373.962, 0.0781702/step, 4.16908 hours remaining, 597.718750 MB of memory in use.
+ENERGY:    8000       495.6160      1454.5037       610.5499       109.8604         -66050.7134      4642.5533         0.0000         0.0000     21069.8068         -37667.8232       449.5192    -58737.6300    -37606.5371       448.2160            388.3876       416.5612    271098.1390        -2.2279        -2.3297
+
+LDB: ============= START OF LOAD BALANCING ============== 410.149
+LDB: ============== END OF LOAD BALANCING =============== 410.157
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 410.181
+LDB: ============= START OF LOAD BALANCING ============== 413.983
+LDB: TIME 413.989 LOAD: AVG 0.100148 MAX 0.28852  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 597.719 MB
+LDB: TIME 413.989 LOAD: AVG 0.100148 MAX 0.28852  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 597.719 MB
+LDB: TIME 413.99 LOAD: AVG 0.100148 MAX 0.28852  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 597.719 MB
+LDB: ============== END OF LOAD BALANCING =============== 413.997
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 414.09
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 10000
+The last position output (seq=10000) takes 0.006 seconds, 597.719 MB of memory in use
+PRESSURE: 10000 161.694 -31.3842 81.485 -31.3809 -118.269 188.462 81.4854 188.462 -64.6404
+GPRESSURE: 10000 213.901 -103.049 104.32 -80.1969 -7.71685 240.139 14.1578 117.183 -129.679
+PRESSAVG: 10000 13.9637 -15.8154 2.46335 -15.8154 -12.6966 -0.703238 2.46332 -0.703192 -12.0957
+GPRESSAVG: 10000 14.3497 -15.9163 2.59363 -15.3934 -12.7776 -0.149996 2.34281 -0.881732 -12.038
+TIMING: 10000  CPU: 397.229, 0.0526643/step  Wall: 530.374, 0.0782057/step, 4.12752 hours remaining, 597.718750 MB of memory in use.
+ENERGY:   10000       548.7177      1490.7108       630.5428        82.6789         -65876.4771      4273.8679         0.0000         0.0000     20892.4455         -37957.5135       445.7352    -58849.9590    -37898.2611       449.3090             -7.0720        25.5016    270816.6732        -3.6095        -3.4886
+
+LDB: ============= START OF LOAD BALANCING ============== 566.677
+LDB: ============== END OF LOAD BALANCING =============== 566.681
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 566.705
+LDB: ============= START OF LOAD BALANCING ============== 570.64
+LDB: TIME 570.657 LOAD: AVG 0.104122 MAX 0.300031  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 597.719 MB
+LDB: TIME 570.657 LOAD: AVG 0.104122 MAX 0.300031  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 597.719 MB
+LDB: TIME 570.657 LOAD: AVG 0.104122 MAX 0.300031  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 597.719 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 570.673
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 570.801
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 12000
+The last position output (seq=12000) takes 0.017 seconds, 597.969 MB of memory in use
+PRESSURE: 12000 160.006 161.851 -101.659 161.851 569.516 -48.5618 -101.661 -48.5623 538.258
+GPRESSURE: 12000 124.423 169.531 -129.443 237.595 588.794 -91.4533 8.99746 -8.18802 616.78
+PRESSAVG: 12000 1.35346 1.85842 15.9146 1.85839 -3.4226 16.0159 15.9146 16.0159 25.6406
+GPRESSAVG: 12000 0.985511 2.45508 15.8823 1.59533 -2.96561 16.3643 15.9117 16.2007 25.7383
+TIMING: 12000  CPU: 496.515, 0.049643/step  Wall: 675.074, 0.0723501/step, 3.77828 hours remaining, 597.968750 MB of memory in use.
+ENERGY:   12000       534.7191      1513.8464       612.6677       104.8214         -66332.9289      4692.0791         0.0000         0.0000     20933.6016         -37941.1936       446.6133    -58874.7951    -37874.0182       448.3418            422.5934       443.3321    269817.6571         7.8572         7.9194
+
+LDB: ============= START OF LOAD BALANCING ============== 708.557
+LDB: ============== END OF LOAD BALANCING =============== 708.558
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 708.585
+LDB: ============= START OF LOAD BALANCING ============== 710.425
+LDB: TIME 710.433 LOAD: AVG 0.0916331 MAX 0.215233  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 597.969 MB
+LDB: TIME 710.434 LOAD: AVG 0.0916331 MAX 0.215233  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 597.969 MB
+LDB: TIME 710.434 LOAD: AVG 0.0916331 MAX 0.215233  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 597.969 MB
+LDB: ============== END OF LOAD BALANCING =============== 710.441
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 710.505
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 14000
+The last position output (seq=14000) takes 0.004 seconds, 597.969 MB of memory in use
+PRESSURE: 14000 -76.3979 163.474 -6.89117 163.474 -20.5811 -254.352 -6.89495 -254.352 118.954
+GPRESSURE: 14000 -13.9902 96.556 -163.506 180.711 33.522 -204.166 -118.243 -134.488 57.0113
+PRESSAVG: 14000 -24.6335 -4.36666 3.28618 -4.36666 5.31334 -26.7258 3.28616 -26.7258 26.6588
+GPRESSAVG: 14000 -24.8121 -4.42763 2.98536 -3.88673 5.66844 -27.043 3.46597 -27.669 26.8177
+TIMING: 14000  CPU: 586.196, 0.0448403/step  Wall: 808.317, 0.0666214/step, 3.44211 hours remaining, 597.968750 MB of memory in use.
+ENERGY:   14000       572.5206      1451.3645       590.3643       107.3532         -65953.7445      4363.4940         0.0000         0.0000     20936.0961         -37932.5516       446.6665    -58868.6478    -37881.6945       448.9185              7.3249        25.5144    270155.3970         2.4462         2.5580
+
+LDB: ============= START OF LOAD BALANCING ============== 844.321
+LDB: ============== END OF LOAD BALANCING =============== 844.33
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 844.357
+LDB: ============= START OF LOAD BALANCING ============== 848.301
+LDB: TIME 848.313 LOAD: AVG 0.109428 MAX 0.285216  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 597.969 MB
+LDB: TIME 848.314 LOAD: AVG 0.109428 MAX 0.285216  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 597.969 MB
+LDB: TIME 848.314 LOAD: AVG 0.109428 MAX 0.285216  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 597.969 MB
+LDB: ============== END OF LOAD BALANCING =============== 848.321
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 848.399
+PRESSURE: 16000 -213.058 91.2362 -446.796 91.2371 -196.244 34.7322 -446.798 34.7346 -358.744
+GPRESSURE: 16000 -152.219 145.996 -445.874 -57.491 -221.096 19.3561 -428.87 43.2947 -305.541
+PRESSAVG: 16000 -12.0176 -26.5728 -20.3167 -26.5728 12.1514 -2.67409 -20.3166 -2.67404 -11.1528
+GPRESSAVG: 16000 -11.9468 -26.7233 -20.5432 -26.7588 12.3376 -2.782 -20.9589 -2.74354 -11.136
+TIMING: 16000  CPU: 673.368, 0.0435861/step  Wall: 936.66, 0.0641715/step, 3.27988 hours remaining, 598.093750 MB of memory in use.
+ENERGY:   16000       549.8161      1517.9512       599.4408       106.5506         -65881.9713      4213.6379         0.0000         0.0000     21238.4993         -37656.0754       453.1182    -58894.5747    -37601.0402       448.2822           -256.0153      -226.2854    270629.6063        -3.6730        -3.5817
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 16000
+The last position output (seq=16000) takes 0.006 seconds, 598.094 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 970.101
+LDB: ============== END OF LOAD BALANCING =============== 970.105
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 970.117
+LDB: ============= START OF LOAD BALANCING ============== 972.009
+LDB: TIME 972.025 LOAD: AVG 0.106284 MAX 0.242917  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 598.094 MB
+LDB: TIME 972.025 LOAD: AVG 0.106284 MAX 0.242917  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.094 MB
+LDB: TIME 972.025 LOAD: AVG 0.106284 MAX 0.242917  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.094 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 972.041
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 972.253
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 18000
+The last position output (seq=18000) takes 0.005 seconds, 598.219 MB of memory in use
+PRESSURE: 18000 40.3886 205.118 -57.6619 205.116 -84.0755 28.0796 -57.6628 28.0781 -98.1463
+GPRESSURE: 18000 101.383 213.143 -141.056 244.177 -97.5611 -177.82 135.77 119.038 -30.5405
+PRESSAVG: 18000 20.3745 -11.7939 -5.74135 -11.7938 15.4049 -5.18376 -5.74134 -5.18376 -18.977
+GPRESSAVG: 18000 20.2223 -11.3976 -5.80713 -11.8661 15.3829 -5.0904 -5.04034 -5.36826 -19.1893
+TIMING: 18000  CPU: 708.885, 0.0177585/step  Wall: 988.898, 0.0261191/step, 1.32046 hours remaining, 598.218750 MB of memory in use.
+ENERGY:   18000       568.3251      1521.0401       592.1506       103.1644         -66214.9376      4396.7817         0.0000         0.0000     20999.1178         -38034.3579       448.0111    -59033.4757    -37965.2400       448.8167            -47.2777        -8.9062    268663.2102         5.6008         5.4720
+
+LDB: ============= START OF LOAD BALANCING ============== 1016.65
+LDB: ============== END OF LOAD BALANCING =============== 1016.65
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1016.68
+LDB: ============= START OF LOAD BALANCING ============== 1017.86
+LDB: TIME 1017.87 LOAD: AVG 0.0905949 MAX 0.181593  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 598.219 MB
+LDB: TIME 1017.87 LOAD: AVG 0.0905949 MAX 0.181593  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.219 MB
+LDB: TIME 1017.87 LOAD: AVG 0.0905949 MAX 0.181593  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.219 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 1017.89
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1017.94
+PRESSURE: 20000 -56.5552 7.37475 -364.713 7.37619 87.2044 176.158 -364.712 176.157 300.188
+GPRESSURE: 20000 28.7648 63.7346 -341.147 -15.7158 82.2203 249.229 -339.293 224.873 338.994
+PRESSAVG: 20000 8.09588 12.7793 -17.1824 12.7793 21.7121 -30.9895 -17.1824 -30.9895 -20.632
+GPRESSAVG: 20000 7.85757 13.1613 -17.0896 13.0156 22.0535 -30.7337 -16.9923 -30.8445 -20.4077
+TIMING: 20000  CPU: 803.121, 0.0471181/step  Wall: 1130.73, 0.0709161/step, 3.54581 hours remaining, 598.593750 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:   20000       542.7622      1438.4014       595.7033       117.6475         -66212.2726      4507.9682         0.0000         0.0000     21056.6410         -37953.1490       449.2383    -59009.7900    -37903.6075       448.8591            110.2791       149.9932    270850.2455         3.0587         3.1678
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 20000
+The last position output (seq=20000) takes 0.025 seconds, 598.594 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 1159.78
+LDB: ============== END OF LOAD BALANCING =============== 1159.78
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1159.81
+LDB: ============= START OF LOAD BALANCING ============== 1161.21
+LDB: TIME 1161.22 LOAD: AVG 0.0959696 MAX 0.204167  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 598.594 MB
+LDB: TIME 1161.22 LOAD: AVG 0.0959696 MAX 0.204167  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.594 MB
+LDB: TIME 1161.22 LOAD: AVG 0.0959696 MAX 0.204167  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.594 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 1161.23
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1161.44
+PRESSURE: 22000 95.9899 49.2946 50.1715 49.2927 78.6473 -159.061 50.1715 -159.06 154.49
+GPRESSURE: 22000 141.849 -26.3679 17.1292 87.2033 83.4855 -218.894 -75.7525 -167.47 174.683
+PRESSAVG: 22000 20.0156 40.63 -0.375213 40.6301 -18.8718 6.096 -0.375222 6.09604 -7.30727
+GPRESSAVG: 22000 20.139 40.1223 -0.780936 40.4893 -18.9415 5.94395 -0.153341 5.93098 -7.14278
+TIMING: 22000  CPU: 849.728, 0.0233034/step  Wall: 1198.73, 0.0339988/step, 1.68105 hours remaining, 598.593750 MB of memory in use.
+ENERGY:   22000       547.6452      1451.8732       598.0325       105.8822         -65984.4360      4307.0267         0.0000         0.0000     20956.1663         -38017.8100       447.0947    -58973.9762    -37942.2641       448.3534            109.7089       133.3393    270862.6531        -2.0545        -1.9818
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 22000
+LDB: ============= START OF LOAD BALANCING ============== 1234.79
+LDB: ============== END OF LOAD BALANCING =============== 1234.8
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1234.82
+LDB: ============= START OF LOAD BALANCING ============== 1238.36
+LDB: TIME 1238.38 LOAD: AVG 0.107941 MAX 0.315604  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 598.594 MB
+LDB: TIME 1238.38 LOAD: AVG 0.107941 MAX 0.315604  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.594 MB
+LDB: TIME 1238.38 LOAD: AVG 0.107941 MAX 0.315604  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.594 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 1238.39
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1238.45
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 24000
+PRESSURE: 24000 -338.158 -23.7177 65.4598 -23.72 -120.141 -24.9775 65.463 -24.9764 -257.468
+GPRESSURE: 24000 -299.79 42.9013 -87.9336 -77.5596 -103.459 -173.42 150.57 47.3525 -241.49
+PRESSAVG: 24000 -0.523932 13.2608 -1.86615 13.2608 0.799367 15.8757 -1.86616 15.8757 14.6952
+GPRESSAVG: 24000 -0.360576 13.4345 -1.91167 13.8112 0.916083 16.1289 -2.04618 15.9211 14.5519
+TIMING: 24000  CPU: 944.434, 0.0473532/step  Wall: 1337.51, 0.0693888/step, 3.39234 hours remaining, 598.843750 MB of memory in use.
+ENERGY:   24000       577.3778      1541.3845       597.4387        86.7276         -65727.1335      4071.7572         0.0000         0.0000     21107.1052         -37745.3424       450.3149    -58852.4476    -37709.0335       449.0818           -238.5890      -214.9130    268998.3469         4.9902         5.0358
+
+LDB: ============= START OF LOAD BALANCING ============== 1365.98
+LDB: ============== END OF LOAD BALANCING =============== 1365.98
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1366.01
+LDB: ============= START OF LOAD BALANCING ============== 1367.27
+LDB: TIME 1367.27 LOAD: AVG 0.0985573 MAX 0.194757  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 598.844 MB
+LDB: TIME 1367.27 LOAD: AVG 0.0985573 MAX 0.194757  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.844 MB
+LDB: TIME 1367.27 LOAD: AVG 0.0985573 MAX 0.194757  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.844 MB
+LDB: ============== END OF LOAD BALANCING =============== 1367.28
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1367.35
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 26000
+PRESSURE: 26000 98.8944 110.998 -68.1186 110.997 -189.434 90.67 -68.1184 90.6685 -82.2419
+GPRESSURE: 26000 75.0603 120.567 -117.229 152.307 -137.049 17.253 -115.487 82.1023 -56.9349
+PRESSAVG: 26000 18.7788 -16.6404 5.32436 -16.6405 13.9078 17.9417 5.32431 17.9417 -3.11769
+GPRESSAVG: 26000 19.0127 -16.7065 5.71044 -16.8693 13.6056 18.1188 5.2712 17.778 -2.91898
+TIMING: 26000  CPU: 990.92, 0.0232427/step  Wall: 1407.75, 0.0351223/step, 1.69758 hours remaining, 598.843750 MB of memory in use.
+ENERGY:   26000       523.8582      1510.1336       605.8473       101.0103         -65818.0770      4257.4236         0.0000         0.0000     20985.8096         -37833.9943       447.7271    -58819.8040    -37768.1772       451.3096            -57.5937       -39.6413    271714.2908         9.8563         9.8998
+
+LDB: ============= START OF LOAD BALANCING ============== 1443.66
+LDB: ============== END OF LOAD BALANCING =============== 1443.67
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1443.69
+LDB: ============= START OF LOAD BALANCING ============== 1447.56
+LDB: TIME 1447.57 LOAD: AVG 0.10861 MAX 0.286087  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 598.844 MB
+LDB: TIME 1447.57 LOAD: AVG 0.10861 MAX 0.286087  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.844 MB
+LDB: TIME 1447.57 LOAD: AVG 0.10861 MAX 0.286087  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.844 MB
+LDB: ============== END OF LOAD BALANCING =============== 1447.58
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1447.68
+PRESSURE: 28000 -96.6153 18.9577 7.55998 18.956 -71.0626 -84.486 7.55931 -84.4867 -275.722
+GPRESSURE: 28000 -35.1235 5.92587 -0.0289554 -11.8025 -94.4128 -132.243 19.426 -43.423 -266.712
+PRESSAVG: 28000 1.42393 2.20102 2.4276 2.20101 -28.5307 33.1222 2.4276 33.1222 42.3793
+GPRESSAVG: 28000 1.67817 2.65907 2.26322 1.51482 -28.1251 33.1513 2.60956 33.6431 42.5694
+TIMING: 28000  CPU: 1083.95, 0.046514/step  Wall: 1544.07, 0.0681621/step, 3.25663 hours remaining, 598.843750 MB of memory in use.
+ENERGY:   28000       528.4824      1547.5932       597.5590        94.2509         -66137.3413      4264.9118         0.0000         0.0000     21004.2545         -38100.2895       448.1206    -59104.5440    -38044.4505       449.0698           -147.7999      -132.0827    270449.0280         5.0909         5.3741
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 28000
+LDB: ============= START OF LOAD BALANCING ============== 1572.45
+LDB: ============== END OF LOAD BALANCING =============== 1572.46
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1572.51
+LDB: ============= START OF LOAD BALANCING ============== 1573.83
+LDB: TIME 1573.85 LOAD: AVG 0.0977096 MAX 0.174902  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 598.844 MB
+LDB: TIME 1573.85 LOAD: AVG 0.0977096 MAX 0.174902  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.844 MB
+LDB: TIME 1573.85 LOAD: AVG 0.0977096 MAX 0.174902  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.844 MB
+LDB: ============== END OF LOAD BALANCING =============== 1573.86
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1573.99
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 30000
+PRESSURE: 30000 -125.645 -111.799 -17.6491 -111.8 -87.6774 -160.415 -17.6485 -160.415 -292.052
+GPRESSURE: 30000 -73.3117 -108.217 -8.63495 -91.255 -6.19789 50.0307 -19.0095 -270.337 -360.698
+PRESSAVG: 30000 -2.26637 37.5091 -9.75184 37.5091 5.48675 -4.80261 -9.75185 -4.80258 -20.9354
+GPRESSAVG: 30000 -2.3527 37.1433 -9.86406 37.792 5.53615 -4.11578 -9.6608 -4.81025 -20.5509
+TIMING: 30000  CPU: 1115.44, 0.0157478/step  Wall: 1591.33, 0.0236257/step, 1.11566 hours remaining, 598.843750 MB of memory in use.
+ENERGY:   30000       567.8525      1488.8171       605.5062       116.0544         -66106.2452      4267.7129         0.0000         0.0000     21013.8289         -38046.4732       448.3249    -59060.3021    -37977.7341       446.7931           -168.4583      -146.7359    269460.7057        -5.9050        -5.7892
+
+LDB: ============= START OF LOAD BALANCING ============== 1619.29
+LDB: ============== END OF LOAD BALANCING =============== 1619.29
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1619.33
+LDB: ============= START OF LOAD BALANCING ============== 1620.83
+LDB: TIME 1620.85 LOAD: AVG 0.120051 MAX 0.275512  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 598.844 MB
+LDB: TIME 1620.85 LOAD: AVG 0.120051 MAX 0.275512  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.844 MB
+LDB: TIME 1620.85 LOAD: AVG 0.120051 MAX 0.275512  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.844 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 1620.86
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1620.96
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 32000
+PRESSURE: 32000 -194.602 65.2344 139.809 65.2352 -235.749 -2.27096 139.809 -2.27044 433.509
+GPRESSURE: 32000 -89.2573 55.1161 88.8214 157.556 -219.408 -30.6647 141.551 -64.986 423.197
+PRESSAVG: 32000 2.13683 -0.825588 -26.7386 -0.825572 -11.6831 -8.39284 -26.7387 -8.39281 0.67427
+GPRESSAVG: 32000 2.1057 -0.882902 -26.8678 -0.500799 -11.7685 -8.56386 -26.8589 -8.70558 0.268375
+TIMING: 32000  CPU: 1176.46, 0.0305064/step  Wall: 1679.58, 0.0441294/step, 2.05937 hours remaining, 598.843750 MB of memory in use.
+ENERGY:   32000       579.3634      1467.2301       617.8624       103.4374         -66117.5529      4361.0123         0.0000         0.0000     20953.0839         -38035.5634       447.0289    -58988.6473    -37967.6379       447.9597              1.0529        38.1770    270791.9438        -2.9573        -3.1315
+
+LDB: ============= START OF LOAD BALANCING ============== 1707.77
+LDB: ============== END OF LOAD BALANCING =============== 1707.77
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1707.8
+LDB: ============= START OF LOAD BALANCING ============== 1708.98
+LDB: TIME 1708.99 LOAD: AVG 0.0891498 MAX 0.192195  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 598.844 MB
+LDB: TIME 1708.99 LOAD: AVG 0.0891498 MAX 0.192195  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.844 MB
+LDB: TIME 1708.99 LOAD: AVG 0.0891498 MAX 0.192195  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.844 MB
+LDB: ============== END OF LOAD BALANCING =============== 1709.01
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1709.15
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 34000
+PRESSURE: 34000 -90.5771 -23.7986 -67.1295 -23.7975 -25.0521 101.818 -67.1302 101.816 -103.918
+GPRESSURE: 34000 -124.123 0.561362 16.5309 -63.3403 8.56037 195.236 -95.7277 94.0922 -39.6715
+PRESSAVG: 34000 -4.96883 -6.61092 -33.7876 -6.61086 -11.5852 0.38571 -33.7876 0.385716 5.81653
+GPRESSAVG: 34000 -4.82125 -6.64594 -33.5395 -6.8472 -11.79 0.169399 -34.0566 0.938782 6.50411
+TIMING: 34000  CPU: 1218.6, 0.0210713/step  Wall: 1743.83, 0.0321204/step, 1.48111 hours remaining, 598.843750 MB of memory in use.
+ENERGY:   34000       570.3915      1519.2873       579.2605        92.2921         -65674.5602      4183.2220         0.0000         0.0000     21006.5310         -37723.5758       448.1692    -58730.1068    -37656.0598       448.1926            -73.1824       -51.7446    269560.2486        -3.5792        -3.3691
+
+LDB: ============= START OF LOAD BALANCING ============== 1771.15
+LDB: ============== END OF LOAD BALANCING =============== 1771.16
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1771.19
+LDB: ============= START OF LOAD BALANCING ============== 1772.16
+LDB: TIME 1772.17 LOAD: AVG 0.0814771 MAX 0.144522  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 598.844 MB
+LDB: TIME 1772.17 LOAD: AVG 0.0814771 MAX 0.144522  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.844 MB
+LDB: TIME 1772.17 LOAD: AVG 0.0814771 MAX 0.144522  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.844 MB
+LDB: ============== END OF LOAD BALANCING =============== 1772.18
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1772.21
+PRESSURE: 36000 189.535 68.5686 -20.5688 68.5699 -74.1101 -69.5813 -20.5668 -69.5797 71.8203
+GPRESSURE: 36000 186.839 100.811 -10.6109 -72.4143 -36.3708 -199.947 -108.275 16.3896 138.364
+PRESSAVG: 36000 1.18039 -4.02577 -29.9093 -4.02576 11.8951 -37.4914 -29.9093 -37.4915 -16.9131
+GPRESSAVG: 36000 1.14172 -3.68244 -30.0729 -4.39684 11.6552 -37.5711 -29.6597 -37.603 -16.9645
+TIMING: 36000  CPU: 1248.29, 0.0148462/step  Wall: 1786.12, 0.0211497/step, 0.963486 hours remaining, 598.968750 MB of memory in use.
+ENERGY:   36000       536.2278      1471.9103       612.5776       110.7466         -65629.1981      4313.2095         0.0000         0.0000     20946.6937         -37637.8327       446.8926    -58584.5263    -37593.3131       450.6800             62.4149        96.2774    271365.8012        -1.2792        -1.3892
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 36000
+LDB: ============= START OF LOAD BALANCING ============== 1813.62
+LDB: ============== END OF LOAD BALANCING =============== 1813.63
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1813.65
+LDB: ============= START OF LOAD BALANCING ============== 1814.66
+LDB: TIME 1814.67 LOAD: AVG 0.0852475 MAX 0.17551  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 598.969 MB
+LDB: TIME 1814.67 LOAD: AVG 0.0852475 MAX 0.17551  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.969 MB
+LDB: TIME 1814.67 LOAD: AVG 0.0852475 MAX 0.17551  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.969 MB
+LDB: ============== END OF LOAD BALANCING =============== 1814.69
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1814.86
+PRESSURE: 38000 364.613 35.9721 -113.246 35.9724 419.445 -92.2777 -113.243 -92.2771 273.52
+GPRESSURE: 38000 435.38 14.9643 -100.486 -131.81 415.402 -96.2994 -71.7337 -193.785 261.846
+PRESSAVG: 38000 -15.7026 12.5016 -42.3898 12.5015 28.5574 10.0861 -42.3898 10.0861 -15.613
+GPRESSAVG: 38000 -15.4598 12.4655 -42.1677 12.5282 28.7594 9.91447 -42.3369 10.3348 -15.7598
+TIMING: 38000  CPU: 1277.5, 0.0146043/step  Wall: 1827.44, 0.020658/step, 0.929609 hours remaining, 598.968750 MB of memory in use.
+ENERGY:   38000       540.9055      1409.5077       596.0322        96.0815         -65894.8670      4372.5886         0.0000         0.0000     21116.6445         -37763.1069       450.5185    -58879.7515    -37699.9162       450.4207            352.5259       370.8762    269227.6092        -0.9194        -0.8200
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 38000
+LDB: ============= START OF LOAD BALANCING ============== 1855.04
+LDB: ============== END OF LOAD BALANCING =============== 1855.04
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1855.07
+LDB: ============= START OF LOAD BALANCING ============== 1856.01
+LDB: TIME 1856.01 LOAD: AVG 0.0903114 MAX 0.160196  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 598.969 MB
+LDB: TIME 1856.01 LOAD: AVG 0.0903114 MAX 0.160196  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.969 MB
+LDB: TIME 1856.01 LOAD: AVG 0.0903114 MAX 0.160196  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.969 MB
+LDB: ============== END OF LOAD BALANCING =============== 1856.02
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1856.09
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 40000
+PRESSURE: 40000 377.142 210.417 67.1705 210.417 -129.009 -173.922 67.1729 -173.923 -171.73
+GPRESSURE: 40000 385.981 102.206 138.973 94.5186 -119.556 -11.0184 81.5789 -173.116 -133.784
+PRESSAVG: 40000 -6.89816 18.969 -7.82966 18.969 51.0128 -12.1392 -7.82966 -12.1393 -2.74704
+GPRESSAVG: 40000 -6.79522 18.917 -7.80269 18.5225 51.5271 -12.1355 -7.91432 -12.0447 -2.36146
+TIMING: 40000  CPU: 1305.13, 0.0138127/step  Wall: 1867.59, 0.0200756/step, 0.89225 hours remaining, 598.968750 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:   40000       565.9884      1489.0349       596.2461       112.9100         -65650.1788      4288.0111         0.0000         0.0000     21083.0718         -37514.9165       449.8022    -58597.9883    -37467.0726       450.0208             25.4672        44.2136    271222.0620        13.7892        14.1235
+
+LDB: ============= START OF LOAD BALANCING ============== 1895.19
+LDB: ============== END OF LOAD BALANCING =============== 1895.2
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1895.24
+LDB: ============= START OF LOAD BALANCING ============== 1896.29
+LDB: TIME 1896.3 LOAD: AVG 0.0801237 MAX 0.150347  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 598.969 MB
+LDB: TIME 1896.3 LOAD: AVG 0.0801237 MAX 0.150347  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.969 MB
+LDB: TIME 1896.3 LOAD: AVG 0.0801237 MAX 0.150347  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.969 MB
+LDB: ============== END OF LOAD BALANCING =============== 1896.32
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1896.42
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 42000
+PRESSURE: 42000 -419.585 200.029 212.528 200.026 282.817 55.5518 212.528 55.5544 32.2899
+GPRESSURE: 42000 -322.489 186.127 236.175 128.773 222.721 49.6341 118.329 46.3959 81.6811
+PRESSAVG: 42000 5.36433 23.2564 8.32697 23.2563 10.2238 5.15409 8.32694 5.15405 -0.323416
+GPRESSAVG: 42000 5.61162 22.9884 8.52344 23.3076 10.2418 5.14586 7.952 4.82425 -0.215161
+TIMING: 42000  CPU: 1334.1, 0.0144871/step  Wall: 1909.07, 0.0207414/step, 0.910318 hours remaining, 598.968750 MB of memory in use.
+ENERGY:   42000       555.5943      1437.8452       617.5425        80.0820         -65565.1886      4319.7655         0.0000         0.0000     20851.4349         -37702.9242       444.8603    -58554.3591    -37624.3533       451.6318            -34.8260        -6.0289    273239.0825         5.0882         5.2127
+
+LDB: ============= START OF LOAD BALANCING ============== 1936.71
+LDB: ============== END OF LOAD BALANCING =============== 1936.72
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1936.75
+LDB: ============= START OF LOAD BALANCING ============== 1937.71
+LDB: TIME 1937.71 LOAD: AVG 0.0867074 MAX 0.13623  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 598.969 MB
+LDB: TIME 1937.71 LOAD: AVG 0.0867074 MAX 0.13623  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.969 MB
+LDB: TIME 1937.71 LOAD: AVG 0.0867074 MAX 0.13623  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.969 MB
+LDB: ============== END OF LOAD BALANCING =============== 1937.73
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1937.85
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 44000
+PRESSURE: 44000 561.159 -48.0948 90.5837 -48.0965 100.309 48.2613 90.5848 48.2611 -448.503
+GPRESSURE: 44000 484.945 20.9854 134.136 -80.1775 145.764 125.59 165.859 -56.501 -347.962
+PRESSAVG: 44000 -13.8799 9.41698 -8.9389 9.41691 22.5646 20.3611 -8.93888 20.3611 -17.0312
+GPRESSAVG: 44000 -13.9301 9.48929 -8.9819 9.46944 22.1128 20.4621 -8.50096 20.4265 -17.0919
+TIMING: 44000  CPU: 1363.67, 0.0147831/step  Wall: 1951.94, 0.0214314/step, 0.928696 hours remaining, 598.968750 MB of memory in use.
+ENERGY:   44000       553.3037      1500.3014       585.5257        99.2669         -65944.2524      4448.8183         0.0000         0.0000     21174.6890         -37582.3475       451.7568    -58757.0365    -37527.4620       450.1395             70.9882        94.2487    270108.0808        -2.7821        -2.9697
+
+LDB: ============= START OF LOAD BALANCING ============== 1979.84
+LDB: ============== END OF LOAD BALANCING =============== 1979.85
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1979.88
+LDB: ============= START OF LOAD BALANCING ============== 1981.04
+LDB: TIME 1981.05 LOAD: AVG 0.0797001 MAX 0.146636  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 598.969 MB
+LDB: TIME 1981.05 LOAD: AVG 0.0797001 MAX 0.146636  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.969 MB
+LDB: TIME 1981.05 LOAD: AVG 0.0797001 MAX 0.146636  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.969 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 1981.05
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1981.14
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 46000
+PRESSURE: 46000 -160.947 -247.494 123.721 -247.493 -229.64 -194.767 123.72 -194.766 163.907
+GPRESSURE: 46000 -135.007 -209.858 252.282 -151.162 -254.648 -170.438 55.6476 -71.6581 222.861
+PRESSAVG: 46000 -4.21629 46.5469 19.1294 46.547 -24.2986 0.0919578 19.1293 0.091945 13.7116
+GPRESSAVG: 46000 -4.45561 46.9092 18.8317 46.4944 -24.2148 -0.508663 18.8534 0.267613 13.3599
+TIMING: 46000  CPU: 1392.07, 0.0142028/step  Wall: 1993.88, 0.020969/step, 0.897007 hours remaining, 598.968750 MB of memory in use.
+ENERGY:   46000       584.6167      1477.1977       555.8183        98.0139         -65372.6036      4161.6842         0.0000         0.0000     21138.2378         -37357.0349       450.9791    -58495.2727    -37317.7230       448.9028            -75.5599       -55.5979    273065.0720        -4.9344        -5.1035
+
+LDB: ============= START OF LOAD BALANCING ============== 2021.44
+LDB: ============== END OF LOAD BALANCING =============== 2021.45
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2021.47
+LDB: ============= START OF LOAD BALANCING ============== 2022.43
+LDB: TIME 2022.44 LOAD: AVG 0.0741082 MAX 0.110151  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 598.969 MB
+LDB: TIME 2022.44 LOAD: AVG 0.0741082 MAX 0.110151  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.969 MB
+LDB: TIME 2022.44 LOAD: AVG 0.0741082 MAX 0.110151  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 598.969 MB
+LDB: ============== END OF LOAD BALANCING =============== 2022.45
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2022.51
+PRESSURE: 48000 199.677 -24.8874 -216.755 -24.8897 390.124 -142.079 -216.755 -142.081 -183.947
+GPRESSURE: 48000 305.327 -46.0611 -135.142 -52.8133 411.43 -169.844 -196.414 -133.217 -230.206
+PRESSAVG: 48000 21.9468 -14.7635 25.8467 -14.7635 -21.2728 17.3094 25.8467 17.3094 16.7997
+GPRESSAVG: 48000 22.1764 -15.1471 25.6764 -14.9338 -21.3296 17.3784 25.8881 17.3606 16.6592
+TIMING: 48000  CPU: 1420.45, 0.0141875/step  Wall: 2035.55, 0.0208382/step, 0.879837 hours remaining, 599.218750 MB of memory in use.
+ENERGY:   48000       549.2415      1480.5131       615.8302       101.6353         -65842.5206      4420.0447         0.0000         0.0000     21119.4847         -37555.7711       450.5791    -58675.2559    -37492.6360       450.1859            135.2846       162.1836    271987.4144         5.8246         5.8353
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 48000
+LDB: ============= START OF LOAD BALANCING ============== 2063.3
+LDB: ============== END OF LOAD BALANCING =============== 2063.3
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2063.33
+LDB: ============= START OF LOAD BALANCING ============== 2064.41
+LDB: TIME 2064.41 LOAD: AVG 0.0872419 MAX 0.203978  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.219 MB
+LDB: TIME 2064.41 LOAD: AVG 0.0872419 MAX 0.203978  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.219 MB
+LDB: TIME 2064.41 LOAD: AVG 0.0872419 MAX 0.203978  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.219 MB
+LDB: ============== END OF LOAD BALANCING =============== 2064.41
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2064.43
+PRESSURE: 50000 -88.7043 -4.98089 163.343 -4.98072 -93.716 -143.276 163.345 -143.277 190.554
+GPRESSURE: 50000 -32.8004 -129.512 156.989 75.8713 -39.1298 -18.2369 189.098 -207.013 184.461
+PRESSAVG: 50000 19.3168 13.5073 9.36667 13.5073 -4.07876 1.66565 9.36665 1.66566 -7.43058
+GPRESSAVG: 50000 18.8672 14.1536 9.35502 13.6447 -4.06684 1.76797 9.73459 1.45947 -7.14435
+TIMING: 50000  CPU: 1448.5, 0.0140244/step  Wall: 2077.09, 0.0207679/step, 0.865328 hours remaining, 599.218750 MB of memory in use.
+ENERGY:   50000       505.6223      1546.5425       586.6324        96.1848         -65492.6803      4191.5152         0.0000         0.0000     21099.1918         -37466.9912       450.1461    -58566.1831    -37422.7463       450.7124              2.7114        37.5102    271175.8993         2.6025         2.5520
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 50000
+LDB: ============= START OF LOAD BALANCING ============== 2104.55
+LDB: ============== END OF LOAD BALANCING =============== 2104.55
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2104.58
+LDB: ============= START OF LOAD BALANCING ============== 2105.79
+LDB: TIME 2105.81 LOAD: AVG 0.0865657 MAX 0.171681  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.219 MB
+LDB: TIME 2105.81 LOAD: AVG 0.0865657 MAX 0.171681  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.219 MB
+LDB: TIME 2105.81 LOAD: AVG 0.0865657 MAX 0.171681  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.219 MB
+LDB: ============== END OF LOAD BALANCING =============== 2105.82
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2105.93
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 52000
+PRESSURE: 52000 -333.774 62.7226 -27.5558 62.7224 -221.766 -60.3049 -27.5573 -60.3058 -579.886
+GPRESSURE: 52000 -400.734 87.5264 -117.581 -42.497 -164.331 -90.681 -51.3869 -9.70918 -498.72
+PRESSAVG: 52000 -6.91468 1.76176 6.64737 1.76175 -17.0852 17.8524 6.64734 17.8524 -0.0792698
+GPRESSAVG: 52000 -6.41542 1.8409 6.44051 1.747 -17.6139 18.218 6.88229 18.2893 0.0454921
+TIMING: 52000  CPU: 1477.33, 0.0144184/step  Wall: 2119.49, 0.0212023/step, 0.871652 hours remaining, 599.218750 MB of memory in use.
+ENERGY:   52000       521.7801      1454.4700       574.5241        97.4991         -65574.0914      4064.5873         0.0000         0.0000     20861.3603         -37999.8705       445.0720    -58861.2309    -37939.9035       448.7851           -378.4751      -354.5952    272352.0606        -8.0264        -7.9946
+
+LDB: ============= START OF LOAD BALANCING ============== 2146.99
+LDB: ============== END OF LOAD BALANCING =============== 2146.99
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2147.02
+LDB: ============= START OF LOAD BALANCING ============== 2148.09
+LDB: TIME 2148.1 LOAD: AVG 0.0853331 MAX 0.177767  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.219 MB
+LDB: TIME 2148.1 LOAD: AVG 0.0853331 MAX 0.177767  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.219 MB
+LDB: TIME 2148.1 LOAD: AVG 0.0853331 MAX 0.177767  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.219 MB
+LDB: ============== END OF LOAD BALANCING =============== 2148.11
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2148.23
+PRESSURE: 54000 53.8128 242.444 117.689 242.446 -155.91 -20.6632 117.689 -20.6639 -302.024
+GPRESSURE: 54000 80.7074 237.307 42.6033 261.488 -119.742 -15.2176 98.813 3.61878 -284.917
+PRESSAVG: 54000 -15.1443 -13.2334 -20.43 -13.2333 -32.9411 8.10848 -20.43 8.10848 47.7723
+GPRESSAVG: 54000 -14.8884 -13.9864 -20.419 -12.4985 -32.9381 8.16858 -20.7833 8.10982 47.7676
+TIMING: 54000  CPU: 1505.51, 0.0140877/step  Wall: 2160.21, 0.0203597/step, 0.825697 hours remaining, 599.218750 MB of memory in use.
+ENERGY:   54000       539.9216      1516.7398       577.4623        83.7178         -65676.7741      4144.7622         0.0000         0.0000     21040.5340         -37773.6365       448.8947    -58814.1706    -37723.0796       448.3492           -134.7069      -107.9840    270948.6667        -0.1044        -0.0196
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 54000
+LDB: ============= START OF LOAD BALANCING ============== 2188
+LDB: ============== END OF LOAD BALANCING =============== 2188.01
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2188.03
+LDB: ============= START OF LOAD BALANCING ============== 2189.06
+LDB: TIME 2189.08 LOAD: AVG 0.0831797 MAX 0.15741  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.219 MB
+LDB: TIME 2189.08 LOAD: AVG 0.0831797 MAX 0.15741  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.219 MB
+LDB: TIME 2189.08 LOAD: AVG 0.0831797 MAX 0.15741  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.219 MB
+LDB: ============== END OF LOAD BALANCING =============== 2189.09
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2189.22
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 56000
+PRESSURE: 56000 30.0915 147.839 -318.286 147.841 115.016 -54.1729 -318.287 -54.1738 -25.5864
+GPRESSURE: 56000 153.527 135.659 -274.937 97.8312 77.1112 -94.3558 -256.942 -73.6345 -42.2239
+PRESSAVG: 56000 -6.41697 20.9459 -42.7812 20.9459 -7.11467 18.2421 -42.7812 18.2421 4.7173
+GPRESSAVG: 56000 -7.271 21.7387 -42.2595 21.0552 -6.6697 18.5019 -42.8566 18.2622 4.82218
+TIMING: 56000  CPU: 1532.86, 0.0136748/step  Wall: 2201.72, 0.0207524/step, 0.830097 hours remaining, 599.218750 MB of memory in use.
+ENERGY:   56000       583.1432      1512.2519       600.4055       100.0233         -66055.5190      4323.6360         0.0000         0.0000     20748.1756         -38187.8835       442.6573    -58936.0591    -38136.1343       449.4474             39.8405        62.8049    268867.3684        -2.9381        -3.0395
+
+LDB: ============= START OF LOAD BALANCING ============== 2229.3
+LDB: ============== END OF LOAD BALANCING =============== 2229.3
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2229.3
+LDB: ============= START OF LOAD BALANCING ============== 2230.3
+LDB: TIME 2230.31 LOAD: AVG 0.0821396 MAX 0.152959  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.219 MB
+LDB: TIME 2230.31 LOAD: AVG 0.0821396 MAX 0.152959  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.219 MB
+LDB: TIME 2230.31 LOAD: AVG 0.0821396 MAX 0.152959  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.219 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 2230.32
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2230.49
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 58000
+PRESSURE: 58000 92.5482 -186.833 186.374 -186.834 -299.73 -180.004 186.373 -180.006 72.7851
+GPRESSURE: 58000 225.191 -291.362 227.689 -187.619 -306.743 -87.5173 244.304 -192.084 51.4115
+PRESSAVG: 58000 38.8809 0.128888 0.596967 0.128793 -42.3295 -20.52 0.596944 -20.52 10.9322
+GPRESSAVG: 58000 39.4279 -0.140738 1.09344 0.279205 -42.402 -20.3753 0.635362 -20.3259 11.0493
+TIMING: 58000  CPU: 1561.64, 0.0143937/step  Wall: 2243.03, 0.0206551/step, 0.814729 hours remaining, 599.218750 MB of memory in use.
+ENERGY:   58000       528.8624      1483.7114       609.0366        93.7949         -66085.1000      4269.9672         0.0000         0.0000     21364.3776         -37735.3499       455.8038    -59099.7275    -37682.7737       447.3854            -44.7989       -10.0468    269714.1462         2.4945         2.6918
+
+LDB: ============= START OF LOAD BALANCING ============== 2270.62
+LDB: ============== END OF LOAD BALANCING =============== 2270.63
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2270.68
+LDB: ============= START OF LOAD BALANCING ============== 2271.69
+LDB: TIME 2271.7 LOAD: AVG 0.0819331 MAX 0.171772  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.219 MB
+LDB: TIME 2271.7 LOAD: AVG 0.0819331 MAX 0.171772  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.219 MB
+LDB: TIME 2271.7 LOAD: AVG 0.0819331 MAX 0.171772  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.219 MB
+LDB: ============== END OF LOAD BALANCING =============== 2271.71
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2271.87
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 60000
+PRESSURE: 60000 -20.0278 -255.075 53.7346 -255.075 -74.4762 62.0956 53.735 62.0981 -265.812
+GPRESSURE: 60000 -75.6892 -167.627 124.908 -323.062 2.41186 159.108 52.082 -98.0765 -177.72
+PRESSAVG: 60000 -8.1456 7.80216 -2.25289 7.80217 21.4996 -36.732 -2.25294 -36.732 -1.3689
+GPRESSAVG: 60000 -8.26157 8.20643 -2.91954 8.05827 21.8867 -37.0193 -2.13803 -36.5805 -1.03517
+TIMING: 60000  CPU: 1590.77, 0.0145612/step  Wall: 2284.63, 0.0208031/step, 0.80901 hours remaining, 599.218750 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:   60000       493.6897      1469.4089       591.7967        96.7992         -65541.9132      4138.5210         0.0000         0.0000     21092.0530         -37659.6447       449.9938    -58751.6977    -37596.7052       449.0422           -120.1053       -83.6659    272006.9279         3.9950         4.1967
+
+LDB: ============= START OF LOAD BALANCING ============== 2312.26
+LDB: ============== END OF LOAD BALANCING =============== 2312.26
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2312.27
+LDB: ============= START OF LOAD BALANCING ============== 2313.3
+LDB: TIME 2313.31 LOAD: AVG 0.0862758 MAX 0.175893  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.219 MB
+LDB: TIME 2313.31 LOAD: AVG 0.0862758 MAX 0.175893  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.219 MB
+LDB: TIME 2313.31 LOAD: AVG 0.0862758 MAX 0.175893  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.219 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 2313.32
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2313.48
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 62000
+PRESSURE: 62000 121.194 -36.3769 -2.04482 -36.3763 558.706 -147.588 -2.04593 -147.588 138.808
+GPRESSURE: 62000 159.721 93.0795 95.9226 -164.192 480.342 -178.789 37.8944 -49.4068 263.224
+PRESSAVG: 62000 -5.21209 -10.6005 -1.47434 -10.6005 5.72218 -20.548 -1.47437 -20.548 0.841927
+GPRESSAVG: 62000 -4.51959 -10.7767 -1.41141 -10.5991 5.67865 -20.7392 -2.11315 -20.7957 0.483354
+TIMING: 62000  CPU: 1618.14, 0.0136869/step  Wall: 2326.21, 0.0207873/step, 0.796847 hours remaining, 599.218750 MB of memory in use.
+ENERGY:   62000       552.7764      1442.6465       588.1440        93.2695         -66273.9379      4605.3865         0.0000         0.0000     21119.5497         -37872.1652       450.5804    -58991.7149    -37820.5403       448.6252            272.9025       301.0957    270925.3383         0.4507         0.5475
+
+LDB: ============= START OF LOAD BALANCING ============== 2353.67
+LDB: ============== END OF LOAD BALANCING =============== 2353.68
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2353.7
+LDB: ============= START OF LOAD BALANCING ============== 2354.86
+LDB: TIME 2354.88 LOAD: AVG 0.0902584 MAX 0.225157  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.219 MB
+LDB: TIME 2354.88 LOAD: AVG 0.0902584 MAX 0.225157  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.219 MB
+LDB: TIME 2354.88 LOAD: AVG 0.0902584 MAX 0.225157  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.219 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 2354.89
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2354.95
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 64000
+PRESSURE: 64000 -153.715 -142.094 38.4219 -142.096 193.152 180.188 38.4216 180.187 -410.895
+GPRESSURE: 64000 -241.455 -187.387 49.0293 -131.793 244.36 334.164 59.2559 102.081 -290.047
+PRESSAVG: 64000 -8.50305 22.8332 1.02342 22.8331 12.2036 2.24439 1.02341 2.2444 13.3169
+GPRESSAVG: 64000 -8.54796 23.4339 1.17034 22.8154 11.8796 2.49761 1.43037 2.10011 13.2849
+TIMING: 64000  CPU: 1645.84, 0.0138497/step  Wall: 2367.59, 0.0206891/step, 0.781588 hours remaining, 599.343750 MB of memory in use.
+ENERGY:   64000       544.2727      1466.9258       596.7893        97.4795         -65669.4002      4135.7187         0.0000         0.0000     21067.7054         -37760.5088       449.4744    -58828.2142    -37687.9657       449.3311           -123.8192       -95.7139    270086.9628         5.6725         5.5388
+
+LDB: ============= START OF LOAD BALANCING ============== 2395.35
+LDB: ============== END OF LOAD BALANCING =============== 2395.35
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2395.38
+LDB: ============= START OF LOAD BALANCING ============== 2396.46
+LDB: TIME 2396.48 LOAD: AVG 0.0758212 MAX 0.124867  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.344 MB
+LDB: TIME 2396.48 LOAD: AVG 0.0758212 MAX 0.124867  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.344 MB
+LDB: TIME 2396.48 LOAD: AVG 0.0758212 MAX 0.124867  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.344 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 2396.49
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2396.62
+PRESSURE: 66000 337.229 251.573 128.855 251.572 -99.0808 151.194 128.853 151.195 -493.592
+GPRESSURE: 66000 253.544 238.572 108.298 197.037 -16.9286 76.1841 156.725 170.59 -421.83
+PRESSAVG: 66000 -7.54199 13.7578 -38.3402 13.7578 3.82149 6.19584 -38.3401 6.19583 -23.2649
+GPRESSAVG: 66000 -7.57988 12.9856 -38.0736 13.9117 3.80046 6.50115 -38.0277 6.12022 -23.1777
+TIMING: 66000  CPU: 1675.02, 0.0145894/step  Wall: 2410.06, 0.0212375/step, 0.790507 hours remaining, 599.343750 MB of memory in use.
+ENERGY:   66000       516.0372      1474.6499       594.9719        87.9969         -65691.6341      4313.4779         0.0000         0.0000     21112.0614         -37592.4388       450.4207    -58704.5002    -37536.5435       449.2176            -85.1477       -61.7383    272137.7431        -8.9951        -8.9857
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 66000
+LDB: ============= START OF LOAD BALANCING ============== 2437.34
+LDB: ============== END OF LOAD BALANCING =============== 2437.34
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2437.34
+LDB: ============= START OF LOAD BALANCING ============== 2438.22
+LDB: TIME 2438.24 LOAD: AVG 0.0883991 MAX 0.156655  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.344 MB
+LDB: TIME 2438.24 LOAD: AVG 0.0883991 MAX 0.156655  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.344 MB
+LDB: TIME 2438.24 LOAD: AVG 0.0883991 MAX 0.156655  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.344 MB
+LDB: ============== END OF LOAD BALANCING =============== 2438.25
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2438.37
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 68000
+PRESSURE: 68000 -65.8529 -123.057 -245.839 -123.054 -63.7299 -67.7355 -245.841 -67.7335 -198.965
+GPRESSURE: 68000 69.8517 -73.7917 -267.962 -168.215 -115.35 -55.912 -153.984 54.2757 -161.866
+PRESSAVG: 68000 -18.7989 -22.8546 0.981799 -22.8546 28.0305 8.72752 0.98177 8.72751 -26.1901
+GPRESSAVG: 68000 -18.815 -22.7464 1.51847 -23.121 28.2376 9.14568 1.39977 9.15276 -26.4555
+TIMING: 68000  CPU: 1701.89, 0.0134334/step  Wall: 2450.4, 0.0201701/step, 0.739571 hours remaining, 599.343750 MB of memory in use.
+ENERGY:   68000       570.0505      1414.3616       584.4568        85.0847         -65949.4333      4340.3204         0.0000         0.0000     21200.6335         -37754.5258       452.3103    -58955.1593    -37682.9260       449.2921           -109.5159       -69.1214    269515.4722        -5.6528        -5.6776
+
+LDB: ============= START OF LOAD BALANCING ============== 2478.15
+LDB: ============== END OF LOAD BALANCING =============== 2478.16
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2478.19
+LDB: ============= START OF LOAD BALANCING ============== 2479.3
+LDB: TIME 2479.31 LOAD: AVG 0.0872364 MAX 0.178385  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.344 MB
+LDB: TIME 2479.31 LOAD: AVG 0.0872364 MAX 0.178385  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.344 MB
+LDB: TIME 2479.31 LOAD: AVG 0.0872364 MAX 0.178385  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.344 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 2479.32
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2479.46
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 70000
+PRESSURE: 70000 235.443 -35.1628 -21.8294 -35.1615 73.7853 187.131 -21.831 187.134 108.915
+GPRESSURE: 70000 257.867 -18.9087 47.5956 -99.3936 147.587 256.245 114.966 126.338 113.391
+PRESSAVG: 70000 12.4619 6.40963 2.03285 6.40964 1.12511 -8.51034 2.03285 -8.51039 2.11596
+GPRESSAVG: 70000 12.6467 6.61004 1.8465 6.11663 1.14151 -8.44903 1.6336 -8.60552 2.48896
+TIMING: 70000  CPU: 1729.01, 0.0135628/step  Wall: 2491.86, 0.0207298/step, 0.748577 hours remaining, 599.343750 MB of memory in use.
+ENERGY:   70000       520.3760      1473.9192       621.5943       102.7845         -66285.6036      4457.3372         0.0000         0.0000     20935.1721         -38174.4203       446.6468    -59109.5924    -38113.5758       449.7291            139.3810       172.9482    267869.7643         5.2343         5.4257
+
+LDB: ============= START OF LOAD BALANCING ============== 2519.31
+LDB: ============== END OF LOAD BALANCING =============== 2519.32
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2519.35
+LDB: ============= START OF LOAD BALANCING ============== 2520.33
+LDB: TIME 2520.35 LOAD: AVG 0.0788227 MAX 0.164103  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.344 MB
+LDB: TIME 2520.35 LOAD: AVG 0.0788227 MAX 0.164103  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.344 MB
+LDB: TIME 2520.35 LOAD: AVG 0.0788227 MAX 0.164103  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.344 MB
+LDB: ============== END OF LOAD BALANCING =============== 2520.36
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2520.4
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 72000
+PRESSURE: 72000 308.394 70.6546 25.3662 70.6543 -173.346 239.207 25.3683 239.207 -179.432
+GPRESSURE: 72000 365.286 -20.522 -38.1088 44.237 -251.357 241.971 92.6689 237.678 -87.6063
+PRESSAVG: 72000 -6.80821 -34.1099 -25.2733 -34.1099 -19.9185 -7.03257 -25.2734 -7.03257 17.0229
+GPRESSAVG: 72000 -6.67954 -34.0902 -25.08 -34.3947 -20.4198 -7.18949 -25.3029 -7.6697 16.8726
+TIMING: 72000  CPU: 1755.99, 0.0134904/step  Wall: 2533.3, 0.0207197/step, 0.736702 hours remaining, 599.343750 MB of memory in use.
+ENERGY:   72000       540.5629      1463.1307       613.2662        86.3874         -65735.4229      4342.0772         0.0000         0.0000     20941.5710         -37748.4276       446.7833    -58689.9985    -37686.3770       447.5766            -14.7949         8.7744    272769.5111        -3.2346        -3.4089
+
+LDB: ============= START OF LOAD BALANCING ============== 2561.46
+LDB: ============== END OF LOAD BALANCING =============== 2561.47
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2561.48
+LDB: ============= START OF LOAD BALANCING ============== 2562.52
+LDB: TIME 2562.53 LOAD: AVG 0.0941678 MAX 0.204117  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.344 MB
+LDB: TIME 2562.53 LOAD: AVG 0.0941678 MAX 0.204117  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.344 MB
+LDB: TIME 2562.53 LOAD: AVG 0.0941678 MAX 0.204117  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.344 MB
+LDB: ============== END OF LOAD BALANCING =============== 2562.54
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2562.64
+PRESSURE: 74000 -97.0378 -115.94 210.608 -115.939 34.4796 -154.843 210.608 -154.842 486.066
+GPRESSURE: 74000 -11.097 -119.791 176.565 -187.769 65.4934 -319.414 251.534 -63.5308 455.92
+PRESSAVG: 74000 -3.93569 -9.56052 18.5793 -9.5605 5.66671 34.4336 18.5793 34.4335 -4.05069
+GPRESSAVG: 74000 -3.79269 -9.88112 18.1488 -9.5449 5.6165 34.783 18.9306 34.7748 -3.7262
+TIMING: 74000  CPU: 1783.49, 0.0137502/step  Wall: 2573.94, 0.0203198/step, 0.711193 hours remaining, 599.468750 MB of memory in use.
+ENERGY:   74000       579.7420      1403.6098       580.0581        98.5798         -66340.6288      4447.5666         0.0000         0.0000     21361.9849         -37869.0875       455.7527    -59231.0724    -37812.5657       449.2006            141.1691       170.1054    269418.0878        -0.7732        -0.6341
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 74000
+LDB: ============= START OF LOAD BALANCING ============== 2601.55
+LDB: ============== END OF LOAD BALANCING =============== 2601.56
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2601.57
+LDB: ============= START OF LOAD BALANCING ============== 2602.39
+LDB: TIME 2602.4 LOAD: AVG 0.076393 MAX 0.120972  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.469 MB
+LDB: TIME 2602.4 LOAD: AVG 0.076393 MAX 0.120972  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.469 MB
+LDB: TIME 2602.4 LOAD: AVG 0.076393 MAX 0.120972  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.469 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 2602.41
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2602.54
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 76000
+PRESSURE: 76000 -119.159 9.07903 183.722 9.07977 -260.58 -132.341 183.722 -132.341 -171.563
+GPRESSURE: 76000 -97.3056 40.8135 320.459 63.5943 -149.155 82.4127 81.6541 -160.133 -225.66
+PRESSAVG: 76000 -21.4671 -5.13278 -3.70543 -5.13275 -17.9265 16.4167 -3.70539 16.4167 22.3667
+GPRESSAVG: 76000 -21.6493 -4.84188 -3.4899 -4.96957 -18.0397 16.5191 -4.04342 16.3673 22.6049
+TIMING: 76000  CPU: 1811.89, 0.0142002/step  Wall: 2616.15, 0.0211043/step, 0.726927 hours remaining, 599.468750 MB of memory in use.
+ENERGY:   76000       543.7478      1515.5939       597.8423        87.1902         -66172.1195      4341.4389         0.0000         0.0000     21170.4574         -37915.8490       451.6665    -59086.3064    -37839.0285       447.7318           -183.7672      -157.3735    269563.9740        -5.6756        -5.6947
+
+LDB: ============= START OF LOAD BALANCING ============== 2643.61
+LDB: ============== END OF LOAD BALANCING =============== 2643.62
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2643.65
+LDB: ============= START OF LOAD BALANCING ============== 2644.72
+LDB: TIME 2644.73 LOAD: AVG 0.0794703 MAX 0.156988  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.469 MB
+LDB: TIME 2644.73 LOAD: AVG 0.0794703 MAX 0.156988  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.469 MB
+LDB: TIME 2644.73 LOAD: AVG 0.0794703 MAX 0.156988  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.469 MB
+LDB: ============== END OF LOAD BALANCING =============== 2644.73
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2644.85
+PRESSURE: 78000 -219.087 58.1404 -147.237 58.1402 152.419 215.253 -147.236 215.254 13.2804
+GPRESSURE: 78000 -184.769 121.192 -189.82 177.646 199.197 20.2621 -68.6699 280.104 38.7828
+PRESSAVG: 78000 -0.937617 8.22496 -30.3167 8.22496 -23.9644 -9.44569 -30.3166 -9.4457 24.5797
+GPRESSAVG: 78000 -0.711822 8.62946 -30.4699 8.29841 -23.9 -9.53349 -29.9263 -9.33026 25.0208
+TIMING: 78000  CPU: 1840, 0.0140523/step  Wall: 2658.14, 0.0209937/step, 0.711454 hours remaining, 599.468750 MB of memory in use.
+ENERGY:   78000       523.9052      1513.0308       614.5535        88.0868         -65706.8864      4305.4506         0.0000         0.0000     21029.3527         -37632.5068       448.6561    -58661.8595    -37576.5790       450.1255            -17.7958        17.7369    269795.8237        -0.1074         0.1363
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 78000
+LDB: ============= START OF LOAD BALANCING ============== 2685.7
+LDB: ============== END OF LOAD BALANCING =============== 2685.71
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2685.75
+LDB: ============= START OF LOAD BALANCING ============== 2686.84
+LDB: TIME 2686.84 LOAD: AVG 0.0853069 MAX 0.174681  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.469 MB
+LDB: TIME 2686.84 LOAD: AVG 0.0853069 MAX 0.174681  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.469 MB
+LDB: TIME 2686.84 LOAD: AVG 0.0853069 MAX 0.174681  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.469 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 2686.84
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2686.84
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 80000
+PRESSURE: 80000 -219.727 262.984 -13.0534 262.981 -160.252 -75.1677 -13.0523 -75.1696 -395.669
+GPRESSURE: 80000 -225.142 225.893 -55.4 331.771 -204.776 -129.222 38.4246 -70.1437 -267.007
+PRESSAVG: 80000 9.79214 7.9963 -17.1295 7.9963 -57.3209 17.2938 -17.1295 17.2938 23.799
+GPRESSAVG: 80000 9.93447 7.62655 -16.9754 7.57237 -57.6558 17.0824 -16.7376 17.5796 23.7051
+TIMING: 80000  CPU: 1866.3, 0.0131526/step  Wall: 2697.94, 0.0199007/step, 0.663357 hours remaining, 599.468750 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:   80000       507.9647      1497.8422       605.3626       103.5765         -65598.3492      4165.5274         0.0000         0.0000     21295.8940         -37422.1818       454.3427    -58718.0758    -37372.2051       450.5879           -258.5494      -232.3084    269852.2878        -7.9099        -8.0054
+
+LDB: ============= START OF LOAD BALANCING ============== 2725.5
+LDB: ============== END OF LOAD BALANCING =============== 2725.51
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2725.56
+LDB: ============= START OF LOAD BALANCING ============== 2726.63
+LDB: TIME 2726.64 LOAD: AVG 0.0804231 MAX 0.151668  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.469 MB
+LDB: TIME 2726.64 LOAD: AVG 0.0804231 MAX 0.151668  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.469 MB
+LDB: TIME 2726.64 LOAD: AVG 0.0804231 MAX 0.151668  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.469 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 2726.65
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2726.66
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 82000
+PRESSURE: 82000 178.627 163.441 -106.184 163.443 -32.4025 107.512 -106.183 107.515 -280.108
+GPRESSURE: 82000 179.53 161.75 -88.8408 159.296 -12.694 56.5962 -127.09 178.322 -234.211
+PRESSAVG: 82000 30.8112 -2.74727 -17.9506 -2.74724 -62.2657 1.90413 -17.9507 1.90409 18.4564
+GPRESSAVG: 82000 30.6429 -3.42087 -18.2997 -2.91385 -62.4841 2.20183 -17.7409 1.79207 18.004
+TIMING: 82000  CPU: 1893.89, 0.0137926/step  Wall: 2739.32, 0.0206918/step, 0.678231 hours remaining, 599.468750 MB of memory in use.
+ENERGY:   82000       548.0205      1517.6752       590.1035        84.7339         -65847.2900      4261.6050         0.0000         0.0000     21256.1270         -37589.0248       453.4943    -58845.1519    -37522.0536       449.8344            -44.6280       -22.4584    269757.6593        -4.3327        -4.6124
+
+LDB: ============= START OF LOAD BALANCING ============== 2766.89
+LDB: ============== END OF LOAD BALANCING =============== 2766.9
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2766.95
+LDB: ============= START OF LOAD BALANCING ============== 2768.01
+LDB: TIME 2768.03 LOAD: AVG 0.0838222 MAX 0.167124  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.469 MB
+LDB: TIME 2768.03 LOAD: AVG 0.0838222 MAX 0.167124  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.469 MB
+LDB: TIME 2768.03 LOAD: AVG 0.0838222 MAX 0.167124  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.469 MB
+LDB: ============== END OF LOAD BALANCING =============== 2768.04
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2768.22
+PRESSURE: 84000 153.855 -138.542 -172.545 -138.543 -415.541 85.9413 -172.544 85.9396 -235.063
+GPRESSURE: 84000 -0.0519873 -103.904 -167.264 -64.0561 -334.744 25.932 -105.021 -33.5171 -76.2926
+PRESSAVG: 84000 23.8629 8.79154 3.26042 8.79148 -30.3905 35.0948 3.26043 35.0949 -11.9691
+GPRESSAVG: 84000 23.6633 8.60433 3.41346 9.21906 -29.8815 34.9438 3.38313 35.4934 -12.4327
+TIMING: 84000  CPU: 1924.16, 0.0151373/step  Wall: 2782.02, 0.0213517/step, 0.688001 hours remaining, 599.593750 MB of memory in use.
+ENERGY:   84000       575.4890      1402.4568       594.3168       103.1580         -65713.5907      4288.9933         0.0000         0.0000     21002.3885         -37746.7884       448.0808    -58749.1768    -37678.3172       450.0980           -165.5830      -137.0294    270504.1616        -6.1656        -6.2170
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 84000
+LDB: ============= START OF LOAD BALANCING ============== 2809.51
+LDB: ============== END OF LOAD BALANCING =============== 2809.52
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2809.55
+LDB: ============= START OF LOAD BALANCING ============== 2810.71
+LDB: TIME 2810.72 LOAD: AVG 0.0781155 MAX 0.154072  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.594 MB
+LDB: TIME 2810.72 LOAD: AVG 0.0781155 MAX 0.154072  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.594 MB
+LDB: TIME 2810.72 LOAD: AVG 0.0781155 MAX 0.154072  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.594 MB
+LDB: ============== END OF LOAD BALANCING =============== 2810.74
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2810.88
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 86000
+PRESSURE: 86000 201.912 -75.216 -157.36 -75.2155 78.5491 -107.693 -157.357 -107.694 -55.4827
+GPRESSURE: 86000 205.904 -79.6796 -314.343 29.2731 87.4465 -62.8113 -97.2341 -141.988 -17.3174
+PRESSAVG: 86000 9.23128 -5.94948 -12.8116 -5.94948 -20.8559 1.02543 -12.8116 1.02548 11.5496
+GPRESSAVG: 86000 9.28095 -6.031 -13.0545 -6.13278 -20.285 1.33076 -12.962 0.575633 11.367
+TIMING: 86000  CPU: 1951.77, 0.013803/step  Wall: 2823.06, 0.0205158/step, 0.649667 hours remaining, 599.593750 MB of memory in use.
+ENERGY:   86000       537.2778      1458.5440       597.1779       105.5157         -66002.0949      4462.6240         0.0000         0.0000     21159.8748         -37681.0807       451.4408    -58840.9555    -37621.0866       448.4403             74.9928        92.0111    271489.5938        -0.0250         0.1210
+
+LDB: ============= START OF LOAD BALANCING ============== 2850.41
+LDB: ============== END OF LOAD BALANCING =============== 2850.42
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2850.43
+LDB: ============= START OF LOAD BALANCING ============== 2851.51
+LDB: TIME 2851.52 LOAD: AVG 0.0694939 MAX 0.114084  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.594 MB
+LDB: TIME 2851.52 LOAD: AVG 0.0694939 MAX 0.114084  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.594 MB
+LDB: TIME 2851.52 LOAD: AVG 0.0694939 MAX 0.114084  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.594 MB
+LDB: ============== END OF LOAD BALANCING =============== 2851.53
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2851.67
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 88000
+PRESSURE: 88000 51.0439 123.012 18.0093 123.013 266.223 235.603 18.0089 235.603 21.4258
+GPRESSURE: 88000 -50.9992 130.579 86.0644 71.3398 327.829 47.6925 -89.6943 136.65 100.677
+PRESSAVG: 88000 -7.03838 14.6239 5.58915 14.6239 2.10885 21.601 5.58912 21.6011 -1.0137
+GPRESSAVG: 88000 -6.91461 14.4295 5.39546 14.5544 1.89433 21.6802 5.65364 21.7292 -1.18334
+TIMING: 88000  CPU: 1980, 0.0141144/step  Wall: 2864.35, 0.0206485/step, 0.642396 hours remaining, 599.593750 MB of memory in use.
+ENERGY:   88000       535.0523      1460.3980       591.9403       104.1644         -66392.6176      4633.4453         0.0000         0.0000     21191.3868         -37876.2305       452.1131    -59067.6173    -37823.1454       450.0377            112.8975       125.8355    269409.2341        -1.9811        -2.0679
+
+LDB: ============= START OF LOAD BALANCING ============== 2891.92
+LDB: ============== END OF LOAD BALANCING =============== 2891.93
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2891.97
+LDB: ============= START OF LOAD BALANCING ============== 2893.02
+LDB: TIME 2893.03 LOAD: AVG 0.0765818 MAX 0.133036  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.594 MB
+LDB: TIME 2893.03 LOAD: AVG 0.0765818 MAX 0.133036  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.594 MB
+LDB: TIME 2893.03 LOAD: AVG 0.0765818 MAX 0.133036  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.594 MB
+LDB: ============== END OF LOAD BALANCING =============== 2893.06
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2893.19
+PRESSURE: 90000 -498.364 81.5733 139.535 81.5726 -91.7745 -112.439 139.532 -112.441 -194.376
+GPRESSURE: 90000 -468.132 354.577 139.906 -108.024 -141.297 19.9439 198.571 -54.7211 -116.166
+PRESSAVG: 90000 -21.0957 5.66319 -16.7062 5.66318 26.475 22.7801 -16.7062 22.7801 -5.08739
+GPRESSAVG: 90000 -21.2058 6.01109 -16.8241 5.21186 26.3718 23.0148 -15.9947 22.6139 -4.95677
+TIMING: 90000  CPU: 2007.07, 0.013534/step  Wall: 2905.78, 0.0207138/step, 0.632922 hours remaining, 599.593750 MB of memory in use.
+ENERGY:   90000       524.9282      1499.8788       567.2399        88.8098         -65766.2813      4229.7907         0.0000         0.0000     21069.4287         -37786.2051       449.5111    -58855.6338    -37702.2932       449.4413           -261.5049      -241.8650    272339.0758         0.0973         0.0697
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 90000
+LDB: ============= START OF LOAD BALANCING ============== 2933.31
+LDB: ============== END OF LOAD BALANCING =============== 2933.31
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2933.35
+LDB: ============= START OF LOAD BALANCING ============== 2934.39
+LDB: TIME 2934.4 LOAD: AVG 0.0828548 MAX 0.163518  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.594 MB
+LDB: TIME 2934.4 LOAD: AVG 0.0828548 MAX 0.163518  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.594 MB
+LDB: TIME 2934.4 LOAD: AVG 0.0828548 MAX 0.163518  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.594 MB
+LDB: ============== END OF LOAD BALANCING =============== 2934.41
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2934.59
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 92000
+PRESSURE: 92000 -524.09 -132.245 194.819 -132.245 -536.139 -313.882 194.818 -313.879 -187.653
+GPRESSURE: 92000 -516.676 -157.77 216.401 -90.0029 -547.6 -190.684 203.684 -318.985 -68.1733
+PRESSAVG: 92000 19.7445 -7.06249 10.9595 -7.06249 -14.4356 15.7904 10.9595 15.7905 -3.50669
+GPRESSAVG: 92000 19.3589 -7.54345 11.106 -6.72705 -14.2814 15.4961 10.1769 15.4324 -3.27473
+TIMING: 92000  CPU: 2035.53, 0.0142331/step  Wall: 2947.86, 0.0210422/step, 0.631266 hours remaining, 599.593750 MB of memory in use.
+ENERGY:   92000       558.5084      1488.1080       618.3407       105.9917         -66061.0034      4261.5136         0.0000         0.0000     21118.7687         -37909.7722       450.5638    -59028.5409    -37831.5165       448.7891           -415.9609      -377.4829    270217.8189         0.6007         0.6009
+
+LDB: ============= START OF LOAD BALANCING ============== 2975.34
+LDB: ============== END OF LOAD BALANCING =============== 2975.35
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2975.37
+LDB: ============= START OF LOAD BALANCING ============== 2976.41
+LDB: TIME 2976.43 LOAD: AVG 0.0751195 MAX 0.149054  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.594 MB
+LDB: TIME 2976.43 LOAD: AVG 0.0751195 MAX 0.149054  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.594 MB
+LDB: TIME 2976.43 LOAD: AVG 0.0751195 MAX 0.149054  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.594 MB
+LDB: ============== END OF LOAD BALANCING =============== 2976.44
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2976.5
+PRESSURE: 94000 0.0644489 39.8382 125.784 39.8392 -262.019 -38.9337 125.786 -38.9341 -94.9663
+GPRESSURE: 94000 -50.6331 113.664 227.875 93.0903 -220.352 4.13583 40.2644 -134.629 -8.59414
+PRESSAVG: 94000 -26.535 9.8599 -5.15507 9.85993 -12.604 27.5068 -5.15512 27.5068 47.7417
+GPRESSAVG: 94000 -26.5532 9.52655 -4.75194 10.1511 -12.7619 27.6027 -5.69673 27.4026 47.8945
+TIMING: 94000  CPU: 2062.34, 0.0134048/step  Wall: 2989.13, 0.020634/step, 0.607556 hours remaining, 599.718750 MB of memory in use.
+ENERGY:   94000       553.7338      1433.5981       564.3094        80.5945         -65944.2054      4111.4625         0.0000         0.0000     20981.0547         -38219.4524       447.6257    -59200.5071    -38152.0861       447.9079           -118.9735       -93.1932    269348.8928         2.8676         2.8598
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 94000
+LDB: ============= START OF LOAD BALANCING ============== 3016.67
+LDB: ============== END OF LOAD BALANCING =============== 3016.68
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3016.71
+LDB: ============= START OF LOAD BALANCING ============== 3017.63
+LDB: TIME 3017.65 LOAD: AVG 0.0807557 MAX 0.146736  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.719 MB
+LDB: TIME 3017.65 LOAD: AVG 0.0807557 MAX 0.146736  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.719 MB
+LDB: TIME 3017.65 LOAD: AVG 0.0807557 MAX 0.146736  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.719 MB
+LDB: ============== END OF LOAD BALANCING =============== 3017.67
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3017.83
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 96000
+PRESSURE: 96000 385.949 204.058 144.056 204.057 230.519 -99.3764 144.054 -99.3778 249.556
+GPRESSURE: 96000 405.8 101.278 113.505 213.741 278.519 -7.2563 169.277 -268.259 255.001
+PRESSAVG: 96000 -6.90786 17.9912 14.1258 17.9912 18.1211 4.41767 14.1258 4.41768 4.62088
+GPRESSAVG: 96000 -6.51347 18.3385 14.3497 18.0675 18.1897 4.60855 14.1317 4.12123 4.15793
+TIMING: 96000  CPU: 2089.94, 0.0137983/step  Wall: 3030.42, 0.0206454/step, 0.596424 hours remaining, 599.718750 MB of memory in use.
+ENERGY:   96000       511.2987      1490.6569       590.9763       101.7320         -65347.8778      4462.4760         0.0000         0.0000     21079.4097         -37111.3283       449.7241    -58190.7379    -37068.6492       449.2154            288.6748       313.1065    274802.8362         5.2780         5.2781
+
+LDB: ============= START OF LOAD BALANCING ============== 3057.75
+LDB: ============== END OF LOAD BALANCING =============== 3057.76
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3057.77
+LDB: ============= START OF LOAD BALANCING ============== 3058.83
+LDB: TIME 3058.85 LOAD: AVG 0.0753017 MAX 0.126215  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.719 MB
+LDB: TIME 3058.85 LOAD: AVG 0.0753017 MAX 0.126215  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.719 MB
+LDB: TIME 3058.85 LOAD: AVG 0.0753017 MAX 0.126215  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.719 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 3058.86
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3058.98
+PRESSURE: 98000 85.4064 -179.829 7.24054 -179.829 -77.8012 -10.3963 7.24192 -10.3977 -64.4467
+GPRESSURE: 98000 26.6332 -87.8794 18.9197 -131.105 -8.40211 61.8015 -11.7209 62.9752 -52.5887
+PRESSAVG: 98000 -18.1291 -7.73795 12.1456 -7.73791 -6.81271 10.5619 12.1457 10.5618 20.9645
+GPRESSAVG: 98000 -18.1483 -7.60954 11.5585 -7.77957 -6.79048 10.2969 12.4285 10.6549 21.1613
+TIMING: 98000  CPU: 2118.47, 0.0142654/step  Wall: 3071.16, 0.0203684/step, 0.577104 hours remaining, 599.718750 MB of memory in use.
+ENERGY:   98000       591.3015      1423.2237       587.5282        94.1830         -66340.7501      4436.7365         0.0000         0.0000     21142.5650         -38065.2120       451.0715    -59207.7770    -37998.5227       450.5118            -18.9472       -11.4525    270904.5265        -1.3258        -1.2592
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 98000
+LDB: ============= START OF LOAD BALANCING ============== 3098.66
+LDB: ============== END OF LOAD BALANCING =============== 3098.66
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3098.67
+LDB: ============= START OF LOAD BALANCING ============== 3099.65
+LDB: TIME 3099.66 LOAD: AVG 0.0705408 MAX 0.12974  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 599.719 MB
+LDB: TIME 3099.66 LOAD: AVG 0.0705408 MAX 0.12974  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.719 MB
+LDB: TIME 3099.66 LOAD: AVG 0.0705408 MAX 0.12974  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 599.719 MB
+LDB: ============== END OF LOAD BALANCING =============== 3099.68
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3099.71
+PRESSURE: 100000 -103.693 -96.4351 -330.614 -96.4376 -33.6312 187.703 -330.613 187.705 -113.265
+GPRESSURE: 100000 -61.4344 -179.258 -386 -110.874 -35.3957 209.372 -307.986 255.509 -45.5035
+PRESSAVG: 100000 1.05439 11.2571 8.54954 11.2571 -6.99289 -11.2462 8.54947 -11.2462 -7.29804
+GPRESSAVG: 100000 0.901057 11.0281 9.14357 11.3497 -7.01856 -11.1673 8.60134 -12.0071 -7.32145
+TIMING: 100000  CPU: 2144.91, 0.0132206/step  Wall: 3111.21, 0.0200262/step, 0.556284 hours remaining, 602.093750 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  100000       506.1620      1534.4329       599.1222        91.0267         -65570.5856      4128.6812         0.0000         0.0000     21395.6522         -37315.5084       456.4710    -58711.1606    -37265.2844       449.4678            -83.5298       -47.4445    271333.5433        -4.4122        -4.4797
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 100000
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 100000
+WRITING COORDINATES TO RESTART FILE AT STEP 100000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 100000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=100000) takes 0.006 seconds, 602.594 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 3138.9
+LDB: ============== END OF LOAD BALANCING =============== 3138.91
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3138.93
+LDB: ============= START OF LOAD BALANCING ============== 3139.98
+LDB: TIME 3140 LOAD: AVG 0.0782256 MAX 0.130625  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 3140 LOAD: AVG 0.0782256 MAX 0.130625  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 3140 LOAD: AVG 0.0782256 MAX 0.130625  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: ============== END OF LOAD BALANCING =============== 3140.01
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3140.14
+PRESSURE: 102000 -365.013 376.632 250.899 376.631 -245.998 -95.4945 250.898 -95.495 -211.223
+GPRESSURE: 102000 -291.077 427.958 281.519 335.773 -235.266 -167.587 206.396 -91.2555 -233.316
+PRESSAVG: 102000 -50.467 -13.937 27.8074 -13.9371 15.2939 26.2592 27.8075 26.2592 18.1762
+GPRESSAVG: 102000 -50.8058 -14.2743 28.2061 -13.6525 15.2626 25.7483 27.946 26.4144 18.0123
+TIMING: 102000  CPU: 2173.03, 0.0140579/step  Wall: 3152.68, 0.0207354/step, 0.564464 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  102000       530.5189      1517.7489       601.9556       106.1495         -65601.9294      4107.4627         0.0000         0.0000     20841.2023         -37896.8916       444.6420    -58738.0939    -37843.1276       450.2758           -274.0779      -253.2199    270524.7677        -5.6657        -5.8436
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 102000
+LDB: ============= START OF LOAD BALANCING ============== 3180.22
+LDB: ============== END OF LOAD BALANCING =============== 3180.23
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3180.25
+LDB: ============= START OF LOAD BALANCING ============== 3181.36
+LDB: TIME 3181.38 LOAD: AVG 0.0785544 MAX 0.158848  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 3181.38 LOAD: AVG 0.0785544 MAX 0.158848  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 3181.38 LOAD: AVG 0.0785544 MAX 0.158848  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 3181.39
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3181.56
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 104000
+PRESSURE: 104000 132.036 227.781 64.2347 227.78 22.7141 132.509 64.2344 132.509 269.947
+GPRESSURE: 104000 151.951 150.486 -59.2303 211.587 61.5319 167.251 58.0817 54.5188 293.573
+PRESSAVG: 104000 29.6339 15.1724 29.2349 15.1724 -18.1527 -3.53577 29.2349 -3.53576 0.142581
+GPRESSAVG: 104000 29.748 15.3621 28.8848 15.0064 -17.7332 -3.33909 29.3491 -3.99303 0.422853
+TIMING: 104000  CPU: 2200.51, 0.0137409/step  Wall: 3193.75, 0.0205315/step, 0.547507 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  104000       570.0101      1474.5694       624.9519        98.0506         -65938.3717      4299.8148         0.0000         0.0000     21198.3228         -37672.6521       452.2610    -58870.9748    -37614.8483       449.5053            141.5659       169.0185    270910.6554         3.8746         4.1459
+
+LDB: ============= START OF LOAD BALANCING ============== 3221.46
+LDB: ============== END OF LOAD BALANCING =============== 3221.47
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3221.49
+LDB: ============= START OF LOAD BALANCING ============== 3222.51
+LDB: TIME 3222.53 LOAD: AVG 0.0813105 MAX 0.155905  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 3222.53 LOAD: AVG 0.0813105 MAX 0.155905  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 3222.53 LOAD: AVG 0.0813105 MAX 0.155905  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 3222.55
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3222.64
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 106000
+PRESSURE: 106000 253.731 -95.3103 -135.674 -95.3113 -153.956 -434.523 -135.675 -434.522 -161.794
+GPRESSURE: 106000 283.941 -126.452 -110.147 32.6278 -96.9719 -487.087 -165.504 -339.526 -160.371
+PRESSAVG: 106000 1.34031 -24.035 -24.9199 -24.035 12.7571 -29.119 -24.92 -29.119 -24.9747
+GPRESSAVG: 106000 1.02565 -23.799 -24.4723 -23.8054 12.6731 -29.8256 -25.2039 -29.0726 -24.9091
+TIMING: 106000  CPU: 2229.2, 0.0143469/step  Wall: 3234.88, 0.020566/step, 0.537002 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  106000       505.8115      1494.6120       592.4905       123.8760         -65687.5509      4253.2849         0.0000         0.0000     21011.1512         -37706.3248       448.2678    -58717.4760    -37653.1731       448.7199            -20.6732         8.8662    271415.8311        -3.6258        -3.7368
+
+LDB: ============= START OF LOAD BALANCING ============== 3262.25
+LDB: ============== END OF LOAD BALANCING =============== 3262.25
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3262.27
+LDB: ============= START OF LOAD BALANCING ============== 3263.36
+LDB: TIME 3263.37 LOAD: AVG 0.0802373 MAX 0.153071  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 3263.37 LOAD: AVG 0.0802373 MAX 0.153071  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 3263.37 LOAD: AVG 0.0802373 MAX 0.153071  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: ============== END OF LOAD BALANCING =============== 3263.38
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3263.52
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 108000
+PRESSURE: 108000 148.583 174.559 -207.664 174.558 -11.7581 378.99 -207.664 378.991 -48.4344
+GPRESSURE: 108000 273.606 177.096 -147.037 58.444 -77.9128 382.834 -187.921 332.976 -4.93309
+PRESSAVG: 108000 15.3962 4.26718 15.1454 4.26718 -3.4114 7.59112 15.1455 7.59105 -21.7619
+GPRESSAVG: 108000 15.6393 4.04203 14.9029 4.25663 -3.63468 7.94645 15.2672 7.56945 -21.7912
+TIMING: 108000  CPU: 2257.05, 0.013922/step  Wall: 3275.91, 0.0205162/step, 0.524303 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  108000       512.5256      1471.3577       622.5474        94.7942         -66031.1437      4371.5129         0.0000         0.0000     21320.8677         -37637.5381       454.8755    -58958.4058    -37586.8592       448.2394             29.4634        63.5866    271983.4806        -3.2590        -3.2622
+
+LDB: ============= START OF LOAD BALANCING ============== 3303.38
+LDB: ============== END OF LOAD BALANCING =============== 3303.38
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3303.4
+LDB: ============= START OF LOAD BALANCING ============== 3304.54
+LDB: TIME 3304.55 LOAD: AVG 0.0753309 MAX 0.115226  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 3304.55 LOAD: AVG 0.0753309 MAX 0.115226  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 3304.55 LOAD: AVG 0.0753309 MAX 0.115226  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: ============== END OF LOAD BALANCING =============== 3304.55
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3304.63
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 110000
+PRESSURE: 110000 -22.6483 26.3333 156.417 26.3348 -167.482 -31.4594 156.417 -31.4579 209.634
+GPRESSURE: 110000 6.13116 -23.7271 94.3064 147.639 -148.328 85.032 102.694 -33.058 209.148
+PRESSAVG: 110000 12.5047 25.0945 7.27361 25.0945 -33.8021 23.359 7.27362 23.3591 17.2679
+GPRESSAVG: 110000 12.6225 25.2287 7.24447 24.9941 -33.6519 22.8734 7.3434 23.5818 16.9196
+TIMING: 110000  CPU: 2285.16, 0.0140557/step  Wall: 3317.17, 0.0206277/step, 0.515693 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  110000       590.3072      1418.3132       587.2033        95.0180         -65754.5110      4297.9132         0.0000         0.0000     21176.4930         -37589.2632       451.7953    -58765.7561    -37538.5591       449.8893              6.5014        22.3169    271539.4454        -1.3432        -1.3699
+
+LDB: ============= START OF LOAD BALANCING ============== 3344.66
+LDB: ============== END OF LOAD BALANCING =============== 3344.67
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3344.69
+LDB: ============= START OF LOAD BALANCING ============== 3345.72
+LDB: TIME 3345.73 LOAD: AVG 0.0778758 MAX 0.129608  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 3345.74 LOAD: AVG 0.0778758 MAX 0.129608  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 3345.74 LOAD: AVG 0.0778758 MAX 0.129608  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: ============== END OF LOAD BALANCING =============== 3345.75
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3345.87
+PRESSURE: 112000 -103.985 -176.453 -6.12349 -176.451 -147.331 21.3987 -6.12041 21.3971 123.61
+GPRESSURE: 112000 -93.2142 -233.164 -43.5293 -144.008 -72.9109 225.263 -58.2692 86.0654 118.79
+PRESSAVG: 112000 2.05677 -7.41652 5.57544 -7.41648 26.0031 17.7538 5.57545 17.7538 4.80609
+GPRESSAVG: 112000 2.2503 -7.49892 6.01871 -7.86956 26.0371 17.5488 5.35358 17.6001 4.8605
+TIMING: 112000  CPU: 2313.23, 0.0140377/step  Wall: 3358.12, 0.0204746/step, 0.500489 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  112000       559.8087      1445.5604       572.1412        97.9341         -65642.1491      4363.7740         0.0000         0.0000     21114.6335         -37488.2971       450.4756    -58602.9306    -37447.5702       450.6643            -42.5685       -15.7782    273285.1751        10.9553        11.0493
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 112000
+LDB: ============= START OF LOAD BALANCING ============== 3385.55
+LDB: ============== END OF LOAD BALANCING =============== 3385.56
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3385.61
+LDB: ============= START OF LOAD BALANCING ============== 3386.68
+LDB: TIME 3386.7 LOAD: AVG 0.0856693 MAX 0.15244  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 3386.7 LOAD: AVG 0.0856693 MAX 0.15244  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 3386.7 LOAD: AVG 0.0856693 MAX 0.15244  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: ============== END OF LOAD BALANCING =============== 3386.71
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3386.79
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 114000
+PRESSURE: 114000 -243.537 -91.3785 -84.7962 -91.3797 -98.3414 -164.287 -84.7982 -164.287 448.295
+GPRESSURE: 114000 -173.991 -116.655 -53.2291 -145.241 -27.6014 -141.931 -9.12498 -115.025 397.169
+PRESSAVG: 114000 -16.2847 11.1098 8.38472 11.1098 10.4596 -8.4194 8.38474 -8.41944 10.8643
+GPRESSAVG: 114000 -16.3616 11.1583 8.7247 11.0664 10.3775 -8.68808 8.2118 -8.12539 10.9323
+TIMING: 114000  CPU: 2341, 0.0138829/step  Wall: 3399.55, 0.0207169/step, 0.494903 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  114000       568.0468      1516.9244       595.3376        94.8132         -66108.4877      4414.5453         0.0000         0.0000     20999.1262         -37919.6941       448.0112    -58918.8203    -37862.2656       448.8309             35.4722        65.1922    270972.0746         1.6797         1.6494
+
+LDB: ============= START OF LOAD BALANCING ============== 3427.41
+LDB: ============== END OF LOAD BALANCING =============== 3427.41
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3427.43
+LDB: ============= START OF LOAD BALANCING ============== 3428.39
+LDB: TIME 3428.41 LOAD: AVG 0.0773007 MAX 0.139622  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 3428.41 LOAD: AVG 0.0773007 MAX 0.139622  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 3428.41 LOAD: AVG 0.0773007 MAX 0.139622  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: ============== END OF LOAD BALANCING =============== 3428.41
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3428.43
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 116000
+PRESSURE: 116000 405.096 -40.4988 -6.33155 -40.4992 567.951 33.6922 -6.32962 33.6941 -367.727
+GPRESSURE: 116000 422.605 50.7417 -60.8052 127.238 559.219 -40.845 154.915 53.2898 -270.946
+PRESSAVG: 116000 -19.6276 -18.2169 -8.85093 -18.2169 2.3304 2.11097 -8.85087 2.11095 6.07887
+GPRESSAVG: 116000 -19.5082 -17.7199 -8.78627 -18.4706 2.62666 2.18024 -8.78218 2.82129 6.26344
+TIMING: 116000  CPU: 2369.55, 0.0142756/step  Wall: 3440.67, 0.0205587/step, 0.479703 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  116000       534.4828      1548.3091       573.6155        99.8442         -65642.8044      4346.6556         0.0000         0.0000     20968.2117         -37571.6854       447.3517    -58539.8971    -37520.0085       449.8075            201.7732       236.9593    269371.6646        -3.7395        -3.5394
+
+LDB: ============= START OF LOAD BALANCING ============== 3468.07
+LDB: ============== END OF LOAD BALANCING =============== 3468.07
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3468.07
+LDB: ============= START OF LOAD BALANCING ============== 3469.19
+LDB: TIME 3469.2 LOAD: AVG 0.0885584 MAX 0.173529  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 3469.2 LOAD: AVG 0.0885584 MAX 0.173529  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 3469.2 LOAD: AVG 0.0885584 MAX 0.173529  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: ============== END OF LOAD BALANCING =============== 3469.21
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3469.33
+PRESSURE: 118000 -82.6602 -235.296 -107.721 -235.297 -273.112 -138.533 -107.719 -138.532 -39.1109
+GPRESSURE: 118000 -123.502 -227.733 -191.521 -172.108 -255.214 -203.55 -102.307 -111.342 27.5501
+PRESSAVG: 118000 12.7645 -16.9903 -8.0094 -16.9903 -29.4927 0.208664 -8.00938 0.208667 6.9238
+GPRESSAVG: 118000 13.1679 -17.346 -8.67995 -16.6049 -29.6334 0.585933 -8.19456 -0.458486 6.89022
+TIMING: 118000  CPU: 2397.51, 0.0139819/step  Wall: 3482.38, 0.0208546/step, 0.475022 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  118000       588.6901      1402.6956       608.1043        98.7716         -65886.4637      4404.4220         0.0000         0.0000     21110.4101         -37673.3700       450.3854    -58783.7801    -37619.8406       450.7517           -131.6279      -117.0553    272455.8111        -3.2681        -3.1918
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 118000
+LDB: ============= START OF LOAD BALANCING ============== 3509.9
+LDB: ============== END OF LOAD BALANCING =============== 3509.91
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3509.96
+LDB: ============= START OF LOAD BALANCING ============== 3510.93
+LDB: TIME 3510.95 LOAD: AVG 0.0855069 MAX 0.170768  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 3510.95 LOAD: AVG 0.0855069 MAX 0.170768  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 3510.95 LOAD: AVG 0.0855069 MAX 0.170768  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 3510.96
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3511.07
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 120000
+PRESSURE: 120000 92.5621 226.851 -306.548 226.853 -510.007 111.851 -306.549 111.85 -258.28
+GPRESSURE: 120000 35.8863 246.972 -316.26 248.608 -381.267 133.36 -205.479 -2.23443 -270.533
+PRESSAVG: 120000 -16.4293 -13.8104 0.314265 -13.8104 -18.1349 5.81858 0.314276 5.81859 24.8096
+GPRESSAVG: 120000 -16.4487 -13.2162 0.45774 -14.3816 -18.3211 6.03289 0.0583819 5.90329 24.7621
+TIMING: 120000  CPU: 2425.55, 0.0140162/step  Wall: 3523.61, 0.0206152/step, 0.458116 hours remaining, 602.593750 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  120000       571.2517      1489.8057       590.7966        81.9386         -65652.4816      4147.1464         0.0000         0.0000     21094.2516         -37677.2910       450.0407    -58771.5426    -37629.1598       449.2443           -225.2418      -205.3046    271722.9545        -3.2515        -3.3359
+
+LDB: ============= START OF LOAD BALANCING ============== 3551.08
+LDB: ============== END OF LOAD BALANCING =============== 3551.09
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3551.1
+LDB: ============= START OF LOAD BALANCING ============== 3552.01
+LDB: TIME 3552.03 LOAD: AVG 0.0854507 MAX 0.157313  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 3552.03 LOAD: AVG 0.0854507 MAX 0.157313  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 3552.03 LOAD: AVG 0.0854507 MAX 0.157313  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 3552.05
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3552.11
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 122000
+PRESSURE: 122000 185.948 -46.9779 -50.2631 -46.9793 -165.223 90.0731 -50.2618 90.0754 6.08717
+GPRESSURE: 122000 193.754 -117.168 -0.409211 -71.6561 -84.3612 44.4399 -151.402 244.591 18.4453
+PRESSAVG: 122000 4.10019 -0.0723411 -5.22897 -0.0724145 10.8061 8.88989 -5.22906 8.88988 -16.3747
+GPRESSAVG: 122000 4.47628 -0.117092 -5.88338 0.195097 11.2729 8.69577 -4.99176 9.11317 -15.9005
+TIMING: 122000  CPU: 2453.39, 0.0139213/step  Wall: 3564.41, 0.0204001/step, 0.442003 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  122000       539.7799      1474.1253       588.3501       100.1909         -65619.7699      4240.9414         0.0000         0.0000     20939.1760         -37737.2063       446.7322    -58676.3823    -37668.6775       449.4000              8.9376        42.6128    272089.2728        -0.4895        -0.0504
+
+LDB: ============= START OF LOAD BALANCING ============== 3592.03
+LDB: ============== END OF LOAD BALANCING =============== 3592.04
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3592.05
+LDB: ============= START OF LOAD BALANCING ============== 3592.99
+LDB: TIME 3593 LOAD: AVG 0.0761653 MAX 0.130704  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 3593 LOAD: AVG 0.0761653 MAX 0.130704  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 3593 LOAD: AVG 0.0761653 MAX 0.130704  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: ============== END OF LOAD BALANCING =============== 3593.01
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3593.13
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 124000
+PRESSURE: 124000 -247.683 -256.853 9.09411 -256.851 -151.215 177.638 9.09251 177.638 183.328
+GPRESSURE: 124000 -191.447 -136.862 -74.9865 -305.381 -67.2677 217.246 -59.9609 125.074 179.919
+PRESSAVG: 124000 30.6762 -1.2858 6.25954 -1.28576 -20.6541 -0.110752 6.25955 -0.110731 -7.21075
+GPRESSAVG: 124000 30.5771 -0.532187 6.36501 -1.62956 -21.0308 -0.265497 6.27109 0.324331 -6.72194
+TIMING: 124000  CPU: 2481.42, 0.0140169/step  Wall: 3605.32, 0.0204544/step, 0.431815 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  124000       559.9136      1492.3215       566.4258        83.3463         -65779.4148      4351.5934         0.0000         0.0000     20880.7502         -37845.0640       445.4857    -58725.8142    -37786.4903       448.6559            -71.8566       -26.2651    270551.8087         0.9371         0.9415
+
+LDB: ============= START OF LOAD BALANCING ============== 3632.8
+LDB: ============== END OF LOAD BALANCING =============== 3632.81
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3632.83
+LDB: ============= START OF LOAD BALANCING ============== 3633.79
+LDB: TIME 3633.8 LOAD: AVG 0.0761784 MAX 0.127901  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 3633.8 LOAD: AVG 0.0761784 MAX 0.127901  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 3633.8 LOAD: AVG 0.0761784 MAX 0.127901  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 3633.81
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3633.95
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 126000
+PRESSURE: 126000 -283.128 201.12 1.68059 201.119 -364.401 -41.0543 1.68162 -41.0537 -150.003
+GPRESSURE: 126000 -306.92 304.193 -143.322 128.726 -273.62 -83.0154 29.5581 2.63171 -162.163
+PRESSAVG: 126000 6.68969 -28.3598 -14.2141 -28.3598 63.8259 6.37625 -14.2142 6.37624 -54.219
+GPRESSAVG: 126000 6.68064 -29.1164 -14.2969 -28.0948 63.713 6.6273 -14.8011 6.26124 -54.1727
+TIMING: 126000  CPU: 2509.42, 0.0139981/step  Wall: 3647.07, 0.0208779/step, 0.429157 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  126000       527.2634      1443.0948       589.7828        92.3549         -65942.1963      4143.7961         0.0000         0.0000     20958.7807         -38187.1236       447.1505    -59145.9043    -38129.1812       450.2064           -265.8440      -247.5677    270423.4570         5.4322         5.4070
+
+LDB: ============= START OF LOAD BALANCING ============== 3674.8
+LDB: ============== END OF LOAD BALANCING =============== 3674.81
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3674.83
+LDB: ============= START OF LOAD BALANCING ============== 3675.85
+LDB: TIME 3675.85 LOAD: AVG 0.0771581 MAX 0.14467  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 3675.85 LOAD: AVG 0.0771581 MAX 0.14467  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 3675.85 LOAD: AVG 0.0771581 MAX 0.14467  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 3675.86
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3675.99
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 128000
+PRESSURE: 128000 -186.201 -114.802 6.37947 -114.801 337.868 215.259 6.37947 215.261 134.178
+GPRESSURE: 128000 -131.501 -123.913 -97.7782 -214.729 325.847 337.248 115.133 221.686 130.646
+PRESSAVG: 128000 -30.293 1.43865 -23.4834 1.43864 8.75267 -2.32086 -23.4833 -2.32093 16.8652
+GPRESSAVG: 128000 -31.0768 1.32612 -23.7391 1.39282 9.02288 -2.18403 -22.8626 -2.16889 17.3781
+TIMING: 128000  CPU: 2537.58, 0.0140827/step  Wall: 3688.21, 0.0205704/step, 0.411408 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  128000       548.1880      1504.3348       600.4403        97.8159         -65974.0755      4241.3253         0.0000         0.0000     21037.8693         -37944.1018       448.8378    -58981.9711    -37887.7709       447.9062             95.2818       108.3305    269227.5014        -1.5584        -1.5586
+
+LDB: ============= START OF LOAD BALANCING ============== 3715.73
+LDB: ============== END OF LOAD BALANCING =============== 3715.73
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3715.75
+LDB: ============= START OF LOAD BALANCING ============== 3716.85
+LDB: TIME 3716.85 LOAD: AVG 0.0789353 MAX 0.131397  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 3716.85 LOAD: AVG 0.0789353 MAX 0.131397  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 3716.85 LOAD: AVG 0.0789353 MAX 0.131397  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 3716.86
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3717.02
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 130000
+PRESSURE: 130000 337.38 -91.43 -234.791 -91.4279 -191.202 230.892 -234.792 230.894 -264.799
+GPRESSURE: 130000 275.489 -124.821 -235.134 -99.0407 -125.074 133.053 -256.268 383.897 -213.809
+PRESSAVG: 130000 -13.2266 30.1342 -2.0795 30.1341 39.6235 -4.06016 -2.07951 -4.06014 -3.12092
+GPRESSAVG: 130000 -13.176 30.1472 -1.62779 29.9111 39.8091 -3.62589 -2.28714 -3.67508 -3.10908
+TIMING: 130000  CPU: 2566.4, 0.0144083/step  Wall: 3731.59, 0.0216902/step, 0.421755 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  130000       579.2828      1465.4915       578.3913       100.5000         -65729.5852      4259.7734         0.0000         0.0000     21009.1450         -37737.0012       448.2250    -58746.1462    -37673.0681       448.2238            -39.5406       -21.1312    272055.2093         7.7587         7.8413
+
+LDB: ============= START OF LOAD BALANCING ============== 3759.45
+LDB: ============== END OF LOAD BALANCING =============== 3759.45
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3759.47
+LDB: ============= START OF LOAD BALANCING ============== 3760.54
+LDB: TIME 3760.55 LOAD: AVG 0.0870055 MAX 0.154423  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 3760.55 LOAD: AVG 0.0870055 MAX 0.154423  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 3760.55 LOAD: AVG 0.0870055 MAX 0.154423  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: ============== END OF LOAD BALANCING =============== 3760.57
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3760.7
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 132000
+PRESSURE: 132000 199.797 29.8196 -62.2331 29.82 -211.436 -134.046 -62.2338 -134.044 11.547
+GPRESSURE: 132000 123.78 34.401 -71.5751 20.4895 -48.8467 -103.347 -47.9814 -224.627 -14.3638
+PRESSAVG: 132000 -32.2608 10.889 -6.70495 10.889 28.7647 18.643 -6.70493 18.643 -21.6577
+GPRESSAVG: 132000 -32.3324 10.965 -6.85397 11.1455 28.1017 18.6873 -6.15081 17.8125 -21.7869
+TIMING: 132000  CPU: 2596.06, 0.0148282/step  Wall: 3775.04, 0.0217245/step, 0.410352 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  132000       591.5275      1516.3967       571.3349        79.8185         -66391.6507      4520.3286         0.0000         0.0000     21057.8265         -38054.4180       449.2636    -59112.2445    -37989.9802       448.1722             -0.0308        20.1897    268696.0603        -8.3846        -8.6725
+
+LDB: ============= START OF LOAD BALANCING ============== 3802.77
+LDB: ============== END OF LOAD BALANCING =============== 3802.77
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3802.79
+LDB: ============= START OF LOAD BALANCING ============== 3803.97
+LDB: TIME 3803.99 LOAD: AVG 0.0786645 MAX 0.150423  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 3803.99 LOAD: AVG 0.0786645 MAX 0.150423  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 3803.99 LOAD: AVG 0.0786645 MAX 0.150423  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 3803.99
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3803.99
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 134000
+PRESSURE: 134000 -117.239 -121.784 -81.0372 -121.783 58.4516 109.922 -81.0375 109.922 34.4964
+GPRESSURE: 134000 -125.287 -92.9885 -21.4108 47.6377 65.7694 139.979 -151.505 138.59 112.645
+PRESSAVG: 134000 2.82848 -16.4645 22.851 -16.4645 21.2418 -28.3464 22.851 -28.3464 -19.1195
+GPRESSAVG: 134000 2.96684 -16.975 22.739 -16.1794 21.0934 -28.2291 22.4683 -28.0695 -19.3437
+TIMING: 134000  CPU: 2625.81, 0.0148757/step  Wall: 3818.61, 0.021783/step, 0.399356 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  134000       535.1566      1524.6554       593.9100       103.2343         -65852.7579      4366.0375         0.0000         0.0000     21108.3564         -37621.4077       450.3416    -58729.7641    -37563.6835       448.4627             -8.0971        17.7092    270967.1347         1.6503         1.5722
+
+LDB: ============= START OF LOAD BALANCING ============== 3846.11
+LDB: ============== END OF LOAD BALANCING =============== 3846.13
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3846.16
+LDB: ============= START OF LOAD BALANCING ============== 3847.15
+LDB: TIME 3847.17 LOAD: AVG 0.0923992 MAX 0.170631  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 3847.17 LOAD: AVG 0.0923992 MAX 0.170631  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 3847.17 LOAD: AVG 0.0923992 MAX 0.170631  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 3847.19
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3847.32
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 136000
+PRESSURE: 136000 -145.66 186.198 245.673 186.197 -146.102 -315.213 245.672 -315.213 -161.775
+GPRESSURE: 136000 -49.2904 134.764 214.049 203.547 -57.1006 -239.896 194.185 -343.516 -256.699
+PRESSAVG: 136000 10.0242 -35.1198 3.42629 -35.1199 -32.4019 -31.8619 3.42627 -31.8619 44.1808
+GPRESSAVG: 136000 9.16123 -35.1352 3.34205 -35.0333 -31.839 -32.5809 3.12335 -31.7922 44.6348
+TIMING: 136000  CPU: 2656.15, 0.0151705/step  Wall: 3862.72, 0.0220539/step, 0.39207 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  136000       594.6520      1443.8744       592.7171       114.9576         -65984.6104      4259.5558         0.0000         0.0000     21279.1606         -37699.6929       453.9857    -58978.8535    -37637.9341       449.9976           -151.1791      -121.0300    270080.5816         7.2677         7.3190
+
+LDB: ============= START OF LOAD BALANCING ============== 3890.41
+LDB: ============== END OF LOAD BALANCING =============== 3890.41
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3890.44
+LDB: ============= START OF LOAD BALANCING ============== 3891.35
+LDB: TIME 3891.37 LOAD: AVG 0.0752885 MAX 0.108199  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 3891.37 LOAD: AVG 0.0752885 MAX 0.108199  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 3891.37 LOAD: AVG 0.0752885 MAX 0.108199  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: ============== END OF LOAD BALANCING =============== 3891.38
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3891.49
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 138000
+PRESSURE: 138000 20.8774 185.219 -121.311 185.219 -42.1103 167.571 -121.314 167.57 289.996
+GPRESSURE: 138000 -4.04205 225.171 -69.281 126.508 -20.619 48.2259 -56.208 184.007 350.155
+PRESSAVG: 138000 -20.4853 6.10104 -10.2197 6.10102 8.09827 -25.6846 -10.2196 -25.6846 10.2809
+GPRESSAVG: 138000 -20.2742 6.00772 -10.0868 6.29903 8.11809 -25.7829 -10.2445 -25.7586 10.0374
+TIMING: 138000  CPU: 2686.39, 0.015122/step  Wall: 3908.88, 0.0230846/step, 0.397569 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  138000       545.7547      1543.8447       587.2317       108.2113         -66352.7237      4525.9207         0.0000         0.0000     20887.9508         -38153.8097       445.6393    -59041.7605    -38106.5969       448.7046             89.5876       108.4980    270285.1877        -0.7020        -0.7062
+
+LDB: ============= START OF LOAD BALANCING ============== 3944.82
+LDB: ============== END OF LOAD BALANCING =============== 3944.83
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3944.85
+LDB: ============= START OF LOAD BALANCING ============== 3948.52
+LDB: TIME 3948.52 LOAD: AVG 0.0905301 MAX 0.262502  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 3948.52 LOAD: AVG 0.0905301 MAX 0.262502  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 3948.52 LOAD: AVG 0.0905301 MAX 0.262502  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: ============== END OF LOAD BALANCING =============== 3948.53
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3948.65
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 140000
+PRESSURE: 140000 -602.547 159.647 376.585 159.648 35.3623 -103.435 376.585 -103.433 73.3152
+GPRESSURE: 140000 -567.445 103.014 308.913 102.363 96.9159 -18.3102 354.393 -16.6487 76.4087
+PRESSAVG: 140000 -3.98157 1.20714 1.93896 1.20725 -32.8484 0.152192 1.93895 0.152142 15.7891
+GPRESSAVG: 140000 -3.96573 1.47669 2.07096 1.24414 -32.994 0.325721 2.31727 -0.387024 16.1042
+TIMING: 140000  CPU: 2794.02, 0.0538115/step  Wall: 4065.55, 0.078334/step, 1.30557 hours remaining, 602.593750 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  140000       542.6329      1482.7059       593.4865       107.2728         -65867.1384      4400.5861         0.0000         0.0000     20652.0998         -38088.3544       440.6075    -58740.4542    -38038.7806       448.6450           -164.6232      -131.3734    273606.8134        -7.0136        -6.9518
+
+LDB: ============= START OF LOAD BALANCING ============== 4101.81
+LDB: ============== END OF LOAD BALANCING =============== 4101.81
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4101.84
+LDB: ============= START OF LOAD BALANCING ============== 4105.73
+LDB: TIME 4105.74 LOAD: AVG 0.101025 MAX 0.303362  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 4105.74 LOAD: AVG 0.101025 MAX 0.303362  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 4105.74 LOAD: AVG 0.101025 MAX 0.303362  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 4105.76
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4105.91
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 142000
+PRESSURE: 142000 164.353 -28.4072 86.1334 -28.407 227.594 0.75431 86.1329 0.754378 167.066
+GPRESSURE: 142000 179.807 -172.48 42.7289 120.525 190.51 61.013 81.8821 115.861 260.329
+PRESSAVG: 142000 -15.1039 -0.361904 8.48892 -0.36186 -17.7439 16.5682 8.48899 16.5682 15.4195
+GPRESSAVG: 142000 -15.346 -0.279225 7.9659 -0.0957743 -17.8038 17.1334 8.42522 16.4133 15.4656
+TIMING: 142000  CPU: 2899.31, 0.0526455/step  Wall: 4221.15, 0.0777984/step, 1.25342 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  142000       491.2960      1503.7867       594.3896       106.3804         -65909.9348      4353.2041         0.0000         0.0000     20849.8300         -38011.0479       444.8260    -58860.8780    -37939.6092       446.9915            186.3375       210.2156    269316.7850        -5.8094        -5.8947
+
+LDB: ============= START OF LOAD BALANCING ============== 4257.06
+LDB: ============== END OF LOAD BALANCING =============== 4257.07
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4257.08
+LDB: ============= START OF LOAD BALANCING ============== 4261.01
+LDB: TIME 4261.03 LOAD: AVG 0.10236 MAX 0.284274  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 4261.03 LOAD: AVG 0.10236 MAX 0.284274  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 4261.03 LOAD: AVG 0.10236 MAX 0.284274  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: ============== END OF LOAD BALANCING =============== 4261.04
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4261.17
+PRESSURE: 144000 -127.063 -146.912 -133.068 -146.909 128.909 -52.0987 -133.069 -52.0992 -99.1485
+GPRESSURE: 144000 -120.149 -238.634 -154.521 -34.1629 98.9549 -183.02 -13.2559 -149.145 -16.99
+PRESSAVG: 144000 10.3503 8.89864 2.7309 8.89866 -8.29548 18.0238 2.7309 18.0238 5.12672
+GPRESSAVG: 144000 10.2279 8.64544 3.18573 9.03226 -8.01188 18.0246 2.37412 17.639 5.11247
+TIMING: 144000  CPU: 2999.83, 0.0502604/step  Wall: 4370.72, 0.0747852/step, 1.16333 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  144000       552.1854      1519.4342       587.4797        99.4978         -66005.8294      4379.9567         0.0000         0.0000     21108.2653         -37759.0103       450.3397    -58867.2756    -37691.1486       449.0054            -32.4342       -12.7282    271168.5160         2.3938         2.4428
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 144000
+LDB: ============= START OF LOAD BALANCING ============== 4398.25
+LDB: ============== END OF LOAD BALANCING =============== 4398.26
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4398.29
+LDB: ============= START OF LOAD BALANCING ============== 4399.33
+LDB: TIME 4399.33 LOAD: AVG 0.0826284 MAX 0.160621  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 4399.34 LOAD: AVG 0.0826284 MAX 0.160621  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 4399.34 LOAD: AVG 0.0826284 MAX 0.160621  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 4399.35
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4399.45
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 146000
+PRESSURE: 146000 -284.451 -63.3111 -67.8433 -63.3121 -347.086 -228.335 -67.8453 -228.336 -0.248888
+GPRESSURE: 146000 -165.393 -122.938 -30.057 -53.3157 -335.277 -99.2184 -65.7955 -282.294 -26.3112
+PRESSAVG: 146000 -25.3045 3.0481 -26.7282 3.04808 25.9619 7.57711 -26.7282 7.57713 16.5288
+GPRESSAVG: 146000 -25.4386 3.28377 -26.6392 3.23374 26.1754 7.49409 -25.9283 7.67195 16.8384
+TIMING: 146000  CPU: 3028.83, 0.014501/step  Wall: 4414.38, 0.0218319/step, 0.327479 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  146000       573.5940      1484.2960       581.2429        95.9523         -65803.3132      4240.5061         0.0000         0.0000     20925.5419         -37902.1800       446.4413    -58827.7219    -37844.7032       448.5398           -210.5952      -175.6605    269871.4848         5.7287         5.8584
+
+LDB: ============= START OF LOAD BALANCING ============== 4441.95
+LDB: ============== END OF LOAD BALANCING =============== 4441.95
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4441.98
+LDB: ============= START OF LOAD BALANCING ============== 4442.99
+LDB: TIME 4442.99 LOAD: AVG 0.0889216 MAX 0.166463  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 4442.99 LOAD: AVG 0.0889216 MAX 0.166463  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 4442.99 LOAD: AVG 0.0889216 MAX 0.166463  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 4442.99
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4443.1
+PRESSURE: 148000 -148.615 116.928 4.57537 116.929 312.202 -25.3181 4.57602 -25.3184 -59.4355
+GPRESSURE: 148000 -102.041 51.0158 37.9387 59.3315 272.113 -63.2553 58.3474 -114.208 -14.1083
+PRESSAVG: 148000 -15.2659 -32.382 -14.6526 -32.382 -3.06392 -1.66558 -14.6526 -1.66555 7.60857
+GPRESSAVG: 148000 -15.0719 -31.8838 -14.7315 -32.239 -3.21595 -1.80194 -14.8091 -1.33329 7.35589
+TIMING: 148000  CPU: 3056.3, 0.0137347/step  Wall: 4455.88, 0.0207462/step, 0.299667 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  148000       546.3982      1457.3200       603.9091        99.8657         -65855.9925      4221.5462         0.0000         0.0000     21042.2743         -37884.6790       448.9318    -58926.9533    -37835.7117       447.8215             34.7171        51.9879    270200.2790        -3.5737        -3.6440
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 148000
+LDB: ============= START OF LOAD BALANCING ============== 4483.46
+LDB: ============== END OF LOAD BALANCING =============== 4483.47
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4483.49
+LDB: ============= START OF LOAD BALANCING ============== 4484.61
+LDB: TIME 4484.63 LOAD: AVG 0.097893 MAX 0.164481  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 4484.63 LOAD: AVG 0.097893 MAX 0.164481  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 4484.63 LOAD: AVG 0.097893 MAX 0.164481  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: ============== END OF LOAD BALANCING =============== 4484.64
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4484.64
+PRESSURE: 150000 124.508 56.0395 -186.909 56.0402 477.189 25.4872 -186.909 25.4885 254.455
+GPRESSURE: 150000 108.613 35.5189 -276.506 125.205 457.983 -44.8441 -51.9295 92.5193 365.993
+PRESSAVG: 150000 5.69042 -3.02771 -10.3287 -3.02772 24.9944 -7.52564 -10.3287 -7.52561 -32.8491
+GPRESSAVG: 150000 5.65103 -3.25855 -10.2728 -2.68212 24.8274 -7.68386 -10.7609 -7.72266 -33.1075
+TIMING: 150000  CPU: 3083.57, 0.0136337/step  Wall: 4497.47, 0.020796/step, 0.288834 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  150000       511.3533      1425.3326       571.5447       107.9171         -65999.0208      4453.2439         0.0000         0.0000     20725.5308         -38204.0982       442.1741    -58929.6290    -38150.6251       448.5651            285.3839       310.8631    270378.1376        -0.7214        -0.8763
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 150000
+LDB: ============= START OF LOAD BALANCING ============== 4525.34
+LDB: ============== END OF LOAD BALANCING =============== 4525.35
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4525.37
+LDB: ============= START OF LOAD BALANCING ============== 4526.35
+LDB: TIME 4526.36 LOAD: AVG 0.0746648 MAX 0.120452  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 4526.36 LOAD: AVG 0.0746648 MAX 0.120452  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 4526.36 LOAD: AVG 0.0746648 MAX 0.120452  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 4526.38
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4526.52
+PRESSURE: 152000 -322.708 59.6664 -26.1762 59.6663 -279.633 -72.9643 -26.1747 -72.9637 224.676
+GPRESSURE: 152000 -212.305 240.224 -22.5129 -0.34823 -288.624 -31.6524 -141.87 -156.895 203.688
+PRESSAVG: 152000 -11.8505 23.0793 1.79947 23.0793 10.2533 -9.64221 1.7995 -9.64222 0.811995
+GPRESSAVG: 152000 -11.8446 23.1387 2.33569 22.7609 10.0187 -9.35134 1.30023 -9.85658 0.866322
+TIMING: 152000  CPU: 3113.26, 0.0148489/step  Wall: 4540.73, 0.0216311/step, 0.288415 hours remaining, 602.593750 MB of memory in use.
+ENERGY:  152000       534.3922      1408.5444       623.8286        96.8219         -65902.4418      4420.6916         0.0000         0.0000     21181.3987         -37636.7643       451.9000    -58818.1630    -37579.7200       450.2287           -125.8884       -99.0803    272433.7143        -0.2618        -0.3199
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 152000
+LDB: ============= START OF LOAD BALANCING ============== 4568.39
+LDB: ============== END OF LOAD BALANCING =============== 4568.39
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4568.42
+LDB: ============= START OF LOAD BALANCING ============== 4569.5
+LDB: TIME 4569.52 LOAD: AVG 0.0840912 MAX 0.169527  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.594 MB
+LDB: TIME 4569.52 LOAD: AVG 0.0840912 MAX 0.169527  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: TIME 4569.52 LOAD: AVG 0.0840912 MAX 0.169527  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.594 MB
+LDB: ============== END OF LOAD BALANCING =============== 4569.53
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4569.69
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 154000
+PRESSURE: 154000 122.84 -254.851 -31.0155 -254.851 -72.9319 -47.2764 -31.0171 -47.2774 -368.943
+GPRESSURE: 154000 105.316 -121.904 -21.254 -278.738 -72.0638 -187.539 17.3205 -56.3046 -293.139
+PRESSAVG: 154000 18.5657 32.5829 6.26715 32.5829 7.47808 -15.5054 6.26717 -15.5053 -19.1464
+GPRESSAVG: 154000 18.2689 32.4856 5.96622 32.2142 7.63717 -15.8289 6.69153 -15.2454 -19.1951
+TIMING: 154000  CPU: 3140.97, 0.013855/step  Wall: 4581.91, 0.0205913/step, 0.263111 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  154000       556.6894      1523.0901       597.1439        93.8182         -65421.4023      4185.9371         0.0000         0.0000     21024.2526         -37440.4710       448.5473    -58464.7236    -37390.8221       448.9417           -106.3449       -86.6288    272673.5202         2.2991         2.2370
+
+LDB: ============= START OF LOAD BALANCING ============== 4609.48
+LDB: ============== END OF LOAD BALANCING =============== 4609.48
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4609.51
+LDB: ============= START OF LOAD BALANCING ============== 4610.51
+LDB: TIME 4610.53 LOAD: AVG 0.0835175 MAX 0.163784  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 4610.53 LOAD: AVG 0.0835175 MAX 0.163784  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 4610.53 LOAD: AVG 0.0835175 MAX 0.163784  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 4610.55
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4610.68
+PRESSURE: 156000 31.4854 -46.3511 -155.87 -46.3512 -74.8049 11.1441 -155.87 11.1421 -344.878
+GPRESSURE: 156000 -52.2318 28.2653 -100.879 2.50898 -24.6015 -0.989233 -163.466 -107.257 -248.943
+PRESSAVG: 156000 -23.7066 0.0962918 -21.7367 0.096296 25.6034 15.1624 -21.7367 15.1623 1.50159
+GPRESSAVG: 156000 -23.8278 -0.119956 -21.7393 -0.357169 25.6121 15.2388 -21.6222 15.209 1.73346
+TIMING: 156000  CPU: 3167.7, 0.0133613/step  Wall: 4621.58, 0.0198337/step, 0.242412 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  156000       536.1072      1509.5610       593.5816       113.9249         -65980.9938      4231.0106         0.0000         0.0000     21079.3163         -37917.4923       449.7221    -58996.8086    -37849.8307       448.9922           -129.3992      -108.5921    269802.8633         1.1328         1.1726
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 156000
+LDB: ============= START OF LOAD BALANCING ============== 4649.09
+LDB: ============== END OF LOAD BALANCING =============== 4649.09
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4649.12
+LDB: ============= START OF LOAD BALANCING ============== 4650.1
+LDB: TIME 4650.1 LOAD: AVG 0.0764726 MAX 0.138537  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 4650.1 LOAD: AVG 0.0764726 MAX 0.138537  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 4650.1 LOAD: AVG 0.0764726 MAX 0.138537  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 4650.1
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4650.11
+PRESSURE: 158000 83.1708 -99.0044 -266.921 -99.0057 -185.899 155.078 -266.921 155.076 111.276
+GPRESSURE: 158000 238.662 -38.5446 -262.661 1.1072 -132.318 76.2271 -201.508 138.068 -5.38884
+PRESSAVG: 158000 -23.5387 -10.5841 33.172 -10.5842 21.1384 14.8254 33.172 14.8254 -5.9278
+GPRESSAVG: 158000 -23.1543 -10.3992 33.1404 -10.3838 21.4689 14.4016 33.0521 14.7641 -6.26291
+TIMING: 158000  CPU: 3195.59, 0.0139481/step  Wall: 4662.4, 0.0204122/step, 0.238142 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  158000       575.3740      1412.5193       588.4432        89.1791         -65646.4084      4286.8116         0.0000         0.0000     20862.7446         -37831.3366       445.1016    -58694.0812    -37776.7442       448.3332              2.8494        33.6515    271455.1600        -2.7760        -2.6494
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 158000
+LDB: ============= START OF LOAD BALANCING ============== 4689.98
+LDB: ============== END OF LOAD BALANCING =============== 4689.98
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4690.01
+LDB: ============= START OF LOAD BALANCING ============== 4691.09
+LDB: TIME 4691.1 LOAD: AVG 0.0826276 MAX 0.153723  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 4691.1 LOAD: AVG 0.0826276 MAX 0.153723  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 4691.1 LOAD: AVG 0.0826276 MAX 0.153723  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 4691.11
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4691.17
+PRESSURE: 160000 61.2909 -16.7755 -230.613 -16.7746 -331.883 -440.99 -230.613 -440.989 -157.714
+GPRESSURE: 160000 32.5875 39.6468 -256.871 -16.9511 -263.54 -342.884 -87.2087 -447.216 -118.06
+PRESSAVG: 160000 34.0988 -22.1111 33.909 -22.1111 -12.3233 -26.0077 33.909 -26.0077 -16.2465
+GPRESSAVG: 160000 33.6704 -22.269 33.9026 -22.1067 -12.5611 -25.9429 33.5349 -26.0547 -15.9999
+TIMING: 160000  CPU: 3223.98, 0.014194/step  Wall: 4703.15, 0.0203739/step, 0.226377 hours remaining, 602.718750 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  160000       554.7663      1481.4080       582.8570        99.9195         -65968.2039      4333.8814         0.0000         0.0000     20863.3157         -38052.0559       445.1138    -58915.3716    -37998.7397       449.0084           -142.7687      -116.3373    269021.3605         1.8430         1.7031
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 160000
+LDB: ============= START OF LOAD BALANCING ============== 4730.86
+LDB: ============== END OF LOAD BALANCING =============== 4730.86
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4730.89
+LDB: ============= START OF LOAD BALANCING ============== 4731.93
+LDB: TIME 4731.93 LOAD: AVG 0.0837214 MAX 0.180648  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 4731.93 LOAD: AVG 0.0837214 MAX 0.180648  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 4731.93 LOAD: AVG 0.0837214 MAX 0.180648  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 4731.94
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4732.03
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 162000
+PRESSURE: 162000 89.7032 -115.469 29.4262 -115.47 -518.1 41.9125 29.4256 41.9128 -99.6713
+GPRESSURE: 162000 109.899 -101.966 159.831 22.44 -478.085 241.673 -0.950713 119.681 -55.461
+PRESSAVG: 162000 28.2626 12.9514 -11.3132 12.9514 -34.8544 4.32109 -11.3132 4.3211 18.9335
+GPRESSAVG: 162000 28.3682 12.8392 -10.8512 12.9872 -34.6436 4.53163 -11.3857 4.85159 19.1978
+TIMING: 162000  CPU: 3251.05, 0.0135323/step  Wall: 4743.93, 0.0203887/step, 0.215214 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  162000       534.2111      1500.9899       586.8822        96.4062         -65535.2951      4060.4656         0.0000         0.0000     21031.6291         -37724.7110       448.7047    -58756.3401    -37690.7812       449.1747           -176.0226      -141.2155    269234.0088         4.1139         4.3075
+
+LDB: ============= START OF LOAD BALANCING ============== 4771.46
+LDB: ============== END OF LOAD BALANCING =============== 4771.46
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4771.49
+LDB: ============= START OF LOAD BALANCING ============== 4772.52
+LDB: TIME 4772.54 LOAD: AVG 0.080855 MAX 0.130787  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 4772.54 LOAD: AVG 0.080855 MAX 0.130787  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 4772.54 LOAD: AVG 0.080855 MAX 0.130787  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: ============== END OF LOAD BALANCING =============== 4772.55
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4772.63
+PRESSURE: 164000 -114.67 -71.9508 147.087 -71.9496 -359.334 278.737 147.087 278.739 -210.665
+GPRESSURE: 164000 -125.965 -133.321 304.558 -91.6854 -355.522 196.373 67.3746 226.017 -177.011
+PRESSAVG: 164000 -21.0098 28.4298 -9.33666 28.4299 -6.09032 -9.12439 -9.33667 -9.12437 37.2075
+GPRESSAVG: 164000 -20.8919 28.4431 -9.07201 28.2896 -6.14896 -9.00529 -9.78512 -9.19571 37.2669
+TIMING: 164000  CPU: 3279.62, 0.0142889/step  Wall: 4786.33, 0.0211993/step, 0.211993 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  164000       550.3708      1480.2679       616.1215       108.6125         -66301.5994      4368.5869         0.0000         0.0000     21193.1195         -37984.5203       452.1500    -59177.6399    -37933.7100       450.9328           -228.2230      -219.4992    269173.7042         3.3691         3.4087
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 164000
+LDB: ============= START OF LOAD BALANCING ============== 4813.95
+LDB: ============== END OF LOAD BALANCING =============== 4813.95
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4813.97
+LDB: ============= START OF LOAD BALANCING ============== 4814.98
+LDB: TIME 4814.99 LOAD: AVG 0.07653 MAX 0.153893  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 4814.99 LOAD: AVG 0.07653 MAX 0.153893  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 4814.99 LOAD: AVG 0.07653 MAX 0.153893  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 4814.99
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4815.12
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 166000
+PRESSURE: 166000 201.524 188.437 -270.17 188.436 612.916 51.7347 -270.168 51.7365 -22.6753
+GPRESSURE: 166000 243.626 214.551 -234.98 237.822 695.503 10.8634 -157.279 70.868 -43.8434
+PRESSAVG: 166000 15.7089 6.11114 27.704 6.11109 -15.8418 -8.70159 27.704 -8.70163 -22.8411
+GPRESSAVG: 166000 15.6328 6.57216 27.1107 5.99741 -15.8268 -8.53267 27.9212 -9.02922 -23.0962
+TIMING: 166000  CPU: 3310.8, 0.0155879/step  Wall: 4831.61, 0.022639/step, 0.213813 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  166000       550.9150      1534.3032       586.6464        90.6584         -66015.4754      4507.3583         0.0000         0.0000     21069.1170         -37676.4772       449.5045    -58745.5941    -37624.6974       448.1148            263.9216       298.4286    270269.5003        -7.6580        -7.7634
+
+LDB: ============= START OF LOAD BALANCING ============== 4859.85
+LDB: ============== END OF LOAD BALANCING =============== 4859.85
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4859.88
+LDB: ============= START OF LOAD BALANCING ============== 4860.86
+LDB: TIME 4860.88 LOAD: AVG 0.0821541 MAX 0.118225  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 4860.88 LOAD: AVG 0.0821541 MAX 0.118225  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 4860.88 LOAD: AVG 0.0821541 MAX 0.118225  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 4860.89
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4861.04
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 168000
+PRESSURE: 168000 -54.3881 -69.3279 136.846 -69.3299 -152.328 -58.1773 136.847 -58.176 -148.443
+GPRESSURE: 168000 1.70055 -121.802 174.427 -49.3653 -89.833 -230.055 152.523 41.4786 -193.65
+PRESSAVG: 168000 24.532 -17.8725 14.8722 -17.8726 -38.817 -35.5576 14.8722 -35.5576 23.4456
+GPRESSAVG: 168000 24.7108 -18.1779 15.6406 -17.5615 -38.8096 -36.405 14.6344 -35.3068 23.4991
+TIMING: 168000  CPU: 3342.04, 0.0156209/step  Wall: 4883.07, 0.0257301/step, 0.228712 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  168000       569.8065      1463.8471       620.8313       103.5603         -65940.5899      4286.8236         0.0000         0.0000     21053.5529         -37842.1682       449.1724    -58895.7211    -37774.1714       448.1259           -118.3865       -93.9274    270739.8061         3.0535         3.1334
+
+LDB: ============= START OF LOAD BALANCING ============== 4910.78
+LDB: ============== END OF LOAD BALANCING =============== 4910.78
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4910.79
+LDB: ============= START OF LOAD BALANCING ============== 4911.88
+LDB: TIME 4911.89 LOAD: AVG 0.0875915 MAX 0.140278  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 4911.89 LOAD: AVG 0.0875915 MAX 0.140278  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 4911.89 LOAD: AVG 0.0875915 MAX 0.140278  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: ============== END OF LOAD BALANCING =============== 4911.91
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4912.04
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 170000
+PRESSURE: 170000 174.604 183.547 65.3258 183.549 -468.449 -59.2018 65.3229 -59.2016 -229.858
+GPRESSURE: 170000 239.915 129.824 -116.603 137.944 -466.457 -113.526 111.157 26.2119 -206.938
+PRESSAVG: 170000 25.2114 -3.19445 8.61928 -3.19445 20.2711 -11.9441 8.61929 -11.9441 -15.0009
+GPRESSAVG: 170000 24.6601 -3.25767 8.26192 -3.39902 20.0786 -11.7618 9.16647 -12.0198 -15.2456
+TIMING: 170000  CPU: 3371.16, 0.0145596/step  Wall: 4927.08, 0.0220051/step, 0.183375 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  170000       549.4888      1467.7212       559.7736       104.7300         -65859.5965      4317.7191         0.0000         0.0000     21058.8981         -37801.2656       449.2865    -58860.1637    -37737.7003       449.2181           -174.5676      -144.4932    272973.7851        10.1605         9.8310
+
+LDB: ============= START OF LOAD BALANCING ============== 4954.9
+LDB: ============== END OF LOAD BALANCING =============== 4954.91
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4954.93
+LDB: ============= START OF LOAD BALANCING ============== 4956.13
+LDB: TIME 4956.14 LOAD: AVG 0.0756253 MAX 0.144809  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 4956.14 LOAD: AVG 0.0756253 MAX 0.144809  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 4956.14 LOAD: AVG 0.0756253 MAX 0.144809  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 4956.15
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4956.15
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 172000
+PRESSURE: 172000 7.07886 129.422 -104.036 129.421 -144.913 187.254 -104.036 187.254 -122.067
+GPRESSURE: 172000 0.265767 -37.7331 -218.083 165.571 -70.6361 267.334 1.72786 140.679 -100.675
+PRESSAVG: 172000 1.93878 -21.7462 15.6098 -21.7462 30.7582 -11.344 15.6098 -11.344 -6.74224
+GPRESSAVG: 172000 1.91971 -22.5248 16.3392 -21.138 30.3567 -11.1722 15.4654 -10.7207 -6.88568
+TIMING: 172000  CPU: 3399.98, 0.0144123/step  Wall: 4968.9, 0.0209128/step, 0.162655 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  172000       533.6035      1468.3404       596.8945        97.5505         -66014.1808      4308.8827         0.0000         0.0000     21106.4606         -37902.4487       450.3012    -59008.9093    -37830.1093       448.4670            -86.6339       -57.0151    269311.2556         8.6516         8.4636
+
+LDB: ============= START OF LOAD BALANCING ============== 4996.3
+LDB: ============== END OF LOAD BALANCING =============== 4996.3
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4996.35
+LDB: ============= START OF LOAD BALANCING ============== 4997.33
+LDB: TIME 4997.35 LOAD: AVG 0.0902392 MAX 0.201239  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 4997.35 LOAD: AVG 0.0902392 MAX 0.201239  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 4997.35 LOAD: AVG 0.0902392 MAX 0.201239  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 4997.37
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4997.42
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 174000
+PRESSURE: 174000 -76.1305 43.9949 -87.9329 43.9941 196.772 188.009 -87.9322 188.009 209.13
+GPRESSURE: 174000 -89.5607 4.04635 -25.9207 78.1771 218.422 237.109 -52.8957 -13.66 247.451
+PRESSAVG: 174000 4.17612 -1.57098 -6.08111 -1.57096 49.8632 3.39397 -6.08109 3.39398 -11.0826
+GPRESSAVG: 174000 4.28138 -0.611275 -6.21185 -2.15858 50.043 3.98071 -6.39938 2.82994 -11.0094
+TIMING: 174000  CPU: 3429.93, 0.0149742/step  Wall: 5014.42, 0.0227606/step, 0.164382 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  174000       523.2911      1439.6760       571.0495        95.1846         -65752.8261      4383.0637         0.0000         0.0000     21325.6137         -37414.9475       454.9768    -58740.5612    -37361.0844       449.9378            109.9237       125.4374    271696.7240        14.3189        14.4383
+
+LDB: ============= START OF LOAD BALANCING ============== 5042.39
+LDB: ============== END OF LOAD BALANCING =============== 5042.39
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5042.42
+LDB: ============= START OF LOAD BALANCING ============== 5043.54
+LDB: TIME 5043.55 LOAD: AVG 0.0987293 MAX 0.217075  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 5043.55 LOAD: AVG 0.0987293 MAX 0.217075  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 5043.55 LOAD: AVG 0.0987293 MAX 0.217075  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 5043.56
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5043.65
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 176000
+PRESSURE: 176000 -96.1489 -369.913 121.056 -369.911 163.993 87.2997 121.056 87.3004 -50.1543
+GPRESSURE: 176000 -16.3191 -385.946 146.952 -394.853 113.852 5.15624 115.226 49.7269 -10.0231
+PRESSAVG: 176000 9.94135 9.62931 -27.0591 9.62925 14.8602 17.2688 -27.0591 17.2688 -6.03486
+GPRESSAVG: 176000 10.2465 9.38137 -26.8092 10.2644 14.2166 17.1939 -27.1298 17.5594 -6.12618
+TIMING: 176000  CPU: 3458.92, 0.0144934/step  Wall: 5060.6, 0.0230885/step, 0.153923 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  176000       535.7113      1508.6631       585.5864        99.9091         -65789.1332      4317.2349         0.0000         0.0000     21000.6549         -37741.3734       448.0438    -58742.0283    -37699.0094       449.9633              5.8967        29.1699    271728.9999         6.2556         6.1123
+
+LDB: ============= START OF LOAD BALANCING ============== 5088.33
+LDB: ============== END OF LOAD BALANCING =============== 5088.33
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5088.33
+LDB: ============= START OF LOAD BALANCING ============== 5089.34
+LDB: TIME 5089.36 LOAD: AVG 0.0926574 MAX 0.134861  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 5089.36 LOAD: AVG 0.0926574 MAX 0.134861  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 5089.36 LOAD: AVG 0.0926574 MAX 0.134861  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 5089.38
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5089.5
+PRESSURE: 178000 -152.176 -68.7491 68.2231 -68.7491 89.7346 221.657 68.2215 221.657 93.4246
+GPRESSURE: 178000 -156.492 -117.138 46.7209 -47.5316 164.012 328.938 124.199 143.288 104.648
+PRESSAVG: 178000 0.434901 17.4243 -10.8275 17.4243 2.26115 -14.7706 -10.8275 -14.7706 23.1785
+GPRESSAVG: 178000 0.110949 17.7022 -10.572 16.9471 2.25009 -14.6088 -11.0663 -15.2595 23.4345
+TIMING: 178000  CPU: 3491.55, 0.0163135/step  Wall: 5109.52, 0.0244578/step, 0.149464 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  178000       540.0721      1461.2478       579.0062       110.1548         -66028.3515      4451.3898         0.0000         0.0000     20922.9202         -37963.5607       446.3854    -58886.4809    -37907.4454       447.9213             10.3279        37.3892    270682.5586         8.6249         8.5985
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 178000
+LDB: ============= START OF LOAD BALANCING ============== 5137.45
+LDB: ============== END OF LOAD BALANCING =============== 5137.45
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5137.48
+LDB: ============= START OF LOAD BALANCING ============== 5138.61
+LDB: TIME 5138.62 LOAD: AVG 0.0919776 MAX 0.172265  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 5138.62 LOAD: AVG 0.0919776 MAX 0.172265  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 5138.62 LOAD: AVG 0.0919776 MAX 0.172265  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 5138.63
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5138.72
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 180000
+PRESSURE: 180000 -119.253 431.621 -148.934 431.62 98.5021 -104.253 -148.934 -104.251 24.3252
+GPRESSURE: 180000 -32.1991 504.53 -192.242 417.19 51.5922 7.62697 -129.824 -182.737 52.6938
+PRESSAVG: 180000 28.7857 13.2792 14.772 13.2792 4.21962 11.1325 14.7721 11.1325 3.62599
+GPRESSAVG: 180000 28.5617 13.3347 14.9984 13.4249 4.45045 11.3847 15.0852 11.2673 3.32299
+TIMING: 180000  CPU: 3519.1, 0.0137768/step  Wall: 5155.16, 0.0228225/step, 0.126791 hours remaining, 602.718750 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  180000       533.2190      1489.2958       605.1891        91.8286         -66066.5036      4319.7247         0.0000         0.0000     21100.0962         -37927.1503       450.1654    -59027.2465    -37869.8894       447.7204              1.1915        24.0290    269276.5603        12.2104        12.1117
+
+LDB: ============= START OF LOAD BALANCING ============== 5182.89
+LDB: ============== END OF LOAD BALANCING =============== 5182.89
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5182.91
+LDB: ============= START OF LOAD BALANCING ============== 5184.16
+LDB: TIME 5184.17 LOAD: AVG 0.0793933 MAX 0.157221  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 5184.17 LOAD: AVG 0.0793933 MAX 0.157221  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 5184.17 LOAD: AVG 0.0793933 MAX 0.157221  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: ============== END OF LOAD BALANCING =============== 5184.17
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5184.3
+PRESSURE: 182000 -492.891 -129.612 22.1734 -129.61 -379.593 340.796 22.1732 340.796 -307.647
+GPRESSURE: 182000 -405.785 -179.049 -12.1501 -44.9565 -437.343 259.117 116.174 400.024 -257.2
+PRESSAVG: 182000 38.4334 -9.54822 -8.26084 -9.54822 -25.1033 5.4431 -8.26091 5.44309 7.27053
+GPRESSAVG: 182000 37.9086 -9.87427 -7.59127 -10.2216 -24.7656 4.77497 -8.24277 5.66386 7.1563
+TIMING: 182000  CPU: 3546.76, 0.0138283/step  Wall: 5198.2, 0.0215175/step, 0.107587 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  182000       556.3428      1486.9165       639.6036        90.2440         -65555.9416      4166.9991         0.0000         0.0000     20856.5116         -37759.3239       444.9686    -58615.8355    -37697.3974       449.1130           -393.3768      -366.7759    272837.2409         6.8669         6.7664
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 182000
+LDB: ============= START OF LOAD BALANCING ============== 5225.78
+LDB: ============== END OF LOAD BALANCING =============== 5225.78
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5225.81
+LDB: ============= START OF LOAD BALANCING ============== 5226.96
+LDB: TIME 5226.97 LOAD: AVG 0.0925265 MAX 0.174542  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 5226.97 LOAD: AVG 0.0925265 MAX 0.174542  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 5226.97 LOAD: AVG 0.0925265 MAX 0.174542  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: ============== END OF LOAD BALANCING =============== 5226.99
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5227.13
+PRESSURE: 184000 -18.913 -65.8596 42.9946 -65.8605 45.3149 177.73 42.9934 177.732 218.038
+GPRESSURE: 184000 24.8603 23.7588 -15.212 13.7954 22.2743 261.056 198.212 184.176 248.692
+PRESSAVG: 184000 -3.77543 -0.0691314 12.6957 -0.0691698 -23.1259 -28.8661 12.6956 -28.866 15.2968
+GPRESSAVG: 184000 -3.449 -0.00896808 12.371 0.383623 -23.4002 -28.7873 12.4458 -29.0861 15.3155
+TIMING: 184000  CPU: 3575.74, 0.0144936/step  Wall: 5242.54, 0.0221721/step, 0.0985427 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  184000       544.7825      1497.6604       591.5526       101.3482         -65765.8349      4492.2178         0.0000         0.0000     21044.0474         -37494.2260       448.9696    -58538.2733    -37434.8545       449.4428             81.4799        98.6088    272141.0882        -3.8682        -3.8445
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 184000
+LDB: ============= START OF LOAD BALANCING ============== 5270.38
+LDB: ============== END OF LOAD BALANCING =============== 5270.38
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5270.41
+LDB: ============= START OF LOAD BALANCING ============== 5271.63
+LDB: TIME 5271.64 LOAD: AVG 0.0797123 MAX 0.171633  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 5271.64 LOAD: AVG 0.0797123 MAX 0.171633  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 5271.64 LOAD: AVG 0.0797123 MAX 0.171633  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: ============== END OF LOAD BALANCING =============== 5271.66
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5271.78
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 186000
+PRESSURE: 186000 -133.826 52.2567 424.538 52.2561 -180.021 129.681 424.539 129.682 35.7292
+GPRESSURE: 186000 -120.057 -160.03 457.05 267.767 -166.862 35.713 373.493 44.3764 90.6117
+PRESSAVG: 186000 16.7337 3.62984 31.9128 3.62986 -29.9036 -26.0248 31.9128 -26.0248 15.3769
+GPRESSAVG: 186000 16.6985 3.07134 32.1872 3.63922 -29.7081 -26.2159 32.013 -25.9988 15.6649
+TIMING: 186000  CPU: 3604.09, 0.0141742/step  Wall: 5288.01, 0.022734/step, 0.0884101 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  186000       561.3632      1516.4310       602.5399       105.2197         -65731.9613      4359.4072         0.0000         0.0000     21047.5242         -37539.4761       449.0438    -58587.0003    -37487.3515       450.9091            -92.7058       -65.4359    272454.0223         0.7357         0.8851
+
+LDB: ============= START OF LOAD BALANCING ============== 5315.99
+LDB: ============== END OF LOAD BALANCING =============== 5316
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5316.02
+LDB: ============= START OF LOAD BALANCING ============== 5317.13
+LDB: TIME 5317.14 LOAD: AVG 0.0860928 MAX 0.156846  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 5317.14 LOAD: AVG 0.0860928 MAX 0.156846  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 5317.14 LOAD: AVG 0.0860928 MAX 0.156846  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: ============== END OF LOAD BALANCING =============== 5317.15
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5317.24
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 188000
+PRESSURE: 188000 -162.677 186.937 87.6938 186.937 -97.6752 249.182 87.6931 249.18 -442.429
+GPRESSURE: 188000 -183.573 106.906 71.8776 287.934 -48.8089 246.233 105.909 281.355 -393.907
+PRESSAVG: 188000 -22.7281 -0.986749 8.28851 -0.986783 -1.59154 -7.22722 8.28856 -7.22724 0.188287
+GPRESSAVG: 188000 -22.4887 -0.982832 7.96847 -1.36958 -1.132 -6.52696 8.28443 -7.2497 0.117835
+TIMING: 188000  CPU: 3631.1, 0.0135025/step  Wall: 5331.9, 0.0219434/step, 0.0731448 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  188000       555.2100      1466.2952       602.1120       110.2126         -65976.5930      4412.3890         0.0000         0.0000     20831.8942         -37998.4800       444.4434    -58830.3741    -37950.3714       448.6611           -234.2603      -208.7631    271062.8927        -8.0438        -7.8343
+
+LDB: ============= START OF LOAD BALANCING ============== 5359.89
+LDB: ============== END OF LOAD BALANCING =============== 5359.9
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5359.93
+LDB: ============= START OF LOAD BALANCING ============== 5360.87
+LDB: TIME 5360.88 LOAD: AVG 0.0727077 MAX 0.111573  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 5360.88 LOAD: AVG 0.0727077 MAX 0.111573  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 5360.88 LOAD: AVG 0.0727077 MAX 0.111573  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 5360.9
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5361.03
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 190000
+PRESSURE: 190000 -97.4455 -197.016 105.959 -197.016 31.21 -335.76 105.96 -335.761 415.6
+GPRESSURE: 190000 5.35175 -198.847 119.714 -277.878 53.694 -307.287 77.0281 -513.974 373.809
+PRESSAVG: 190000 -9.74296 9.35207 8.74821 9.3521 7.06428 9.04658 8.74819 9.04658 29.0529
+GPRESSAVG: 190000 -9.53043 9.60767 8.6885 9.13856 6.77823 8.59526 8.98475 8.81364 29.2734
+TIMING: 190000  CPU: 3659.53, 0.0142162/step  Wall: 5377.51, 0.0228072/step, 0.0633532 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  190000       560.2541      1480.2649       592.0504       103.1215         -66109.6872      4447.6965         0.0000         0.0000     20745.8259         -38180.4739       442.6071    -58926.2999    -38114.4234       449.1690            116.4548       144.2849    268672.6005         8.7914         8.8404
+
+LDB: ============= START OF LOAD BALANCING ============== 5405.46
+LDB: ============== END OF LOAD BALANCING =============== 5405.47
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5405.48
+LDB: ============= START OF LOAD BALANCING ============== 5406.49
+LDB: TIME 5406.5 LOAD: AVG 0.089005 MAX 0.157358  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 5406.51 LOAD: AVG 0.089005 MAX 0.157358  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 5406.51 LOAD: AVG 0.089005 MAX 0.157358  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: ============== END OF LOAD BALANCING =============== 5406.52
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5406.65
+PRESSURE: 192000 -95.3678 57.1031 -177.568 57.1023 -98.99 270.232 -177.57 270.232 198.432
+GPRESSURE: 192000 -143.296 -24.3933 -134.554 119.661 -63.7047 220.054 -159.11 361.563 295.714
+PRESSAVG: 192000 33.6996 16.7772 11.9767 16.7772 -22.48 20.2553 11.9767 20.2552 -8.63599
+GPRESSAVG: 192000 33.777 17.1994 12.1622 16.299 -22.0375 20.1916 12.1971 20.9823 -9.22863
+TIMING: 192000  CPU: 3688.25, 0.0143601/step  Wall: 5424.76, 0.0236261/step, 0.0525025 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  192000       542.2044      1491.5914       605.4288        93.5088         -65749.6333      4378.2214         0.0000         0.0000     20929.9428         -37708.7356       446.5352    -58638.6785    -37644.3130       448.4193              1.3581        29.5712    272482.6810         0.8612         0.8370
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 192000
+LDB: ============= START OF LOAD BALANCING ============== 5452.84
+LDB: ============== END OF LOAD BALANCING =============== 5452.85
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5452.89
+LDB: ============= START OF LOAD BALANCING ============== 5454.04
+LDB: TIME 5454.05 LOAD: AVG 0.0820336 MAX 0.140665  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 5454.06 LOAD: AVG 0.0820336 MAX 0.140665  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 5454.06 LOAD: AVG 0.0820336 MAX 0.140665  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 5454.07
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5454.22
+PRESSURE: 194000 24.6822 171.492 238.981 171.493 -94.9866 180.581 238.981 180.581 -151.864
+GPRESSURE: 194000 2.33411 93.4787 180.935 274.211 -104.952 154.64 242.064 99.8915 -22.2456
+PRESSAVG: 194000 23.9294 -1.13019 6.78886 -1.13018 -2.48497 -10.3252 6.78887 -10.3252 -18.6738
+GPRESSAVG: 194000 23.8296 -1.28665 6.45908 -0.824587 -2.47264 -10.8391 7.38969 -10.1434 -18.7152
+TIMING: 194000  CPU: 3717.19, 0.0144675/step  Wall: 5474.21, 0.0247249/step, 0.0412081 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  194000       582.3104      1523.1972       610.1816        97.1346         -66172.9966      4279.2314         0.0000         0.0000     20955.4398         -38125.5015       447.0792    -59080.9414    -38049.0106       449.7512            -74.0561       -41.6213    269109.6682         0.9236         0.8806
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 194000
+LDB: ============= START OF LOAD BALANCING ============== 5502
+LDB: ============== END OF LOAD BALANCING =============== 5502.01
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5502.06
+LDB: ============= START OF LOAD BALANCING ============== 5503.16
+LDB: TIME 5503.17 LOAD: AVG 0.0839852 MAX 0.125923  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 5503.17 LOAD: AVG 0.0839852 MAX 0.125923  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 5503.17 LOAD: AVG 0.0839852 MAX 0.125923  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: ============== END OF LOAD BALANCING =============== 5503.18
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5503.32
+PRESSURE: 196000 -267.361 163.221 69.7681 163.222 -365.329 -16.0673 69.7672 -16.0679 -541.426
+GPRESSURE: 196000 -295.858 226.775 60.5359 135.772 -325.137 -68.7299 64.0707 15.5993 -495.66
+PRESSAVG: 196000 2.27731 10.5553 -18.5906 10.5553 54.3889 29.5737 -18.5906 29.5736 -21.1571
+GPRESSAVG: 196000 2.24839 10.302 -18.4082 10.2781 54.0898 29.1443 -19.1436 29.8171 -21.0575
+TIMING: 196000  CPU: 3734.66, 0.00873783/step  Wall: 5499.02, 0.0124018/step, 0.0137798 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  196000       561.8896      1474.7790       611.9699        97.6905         -65460.5087      4076.5425         0.0000         0.0000     21095.9810         -37541.6562       450.0776    -58637.6371    -37478.6994       448.4461           -391.3718      -372.2181    271835.9724        11.8364        11.7602
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 196000
+LDB: ============= START OF LOAD BALANCING ============== 5524.42
+LDB: ============== END OF LOAD BALANCING =============== 5524.42
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5524.42
+LDB: ============= START OF LOAD BALANCING ============== 5524.65
+LDB: TIME 5524.65 LOAD: AVG 0.0750553 MAX 0.13962  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 5524.65 LOAD: AVG 0.0750553 MAX 0.13962  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 5524.65 LOAD: AVG 0.0750553 MAX 0.13962  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: ============== END OF LOAD BALANCING =============== 5524.65
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5524.65
+PRESSURE: 198000 -551.232 97.6749 31.1243 97.6732 -288.231 -52.8729 31.1228 -52.8698 260.583
+GPRESSURE: 198000 -531.181 138.852 201.497 143.426 -182.101 -31.4548 23.1911 67.8053 175.44
+PRESSAVG: 198000 -35.6736 13.5259 2.27839 13.5259 20.3425 16.0347 2.27839 16.0347 -3.46271
+GPRESSAVG: 198000 -35.4665 12.8888 2.5448 13.4131 20.1465 16.314 2.05006 15.6342 -3.23928
+TIMING: 198000  CPU: 3743.53, 0.00443637/step  Wall: 5509.49, 0.00523775/step, 0.00290986 hours remaining, 602.718750 MB of memory in use.
+ENERGY:  198000       567.8922      1514.6826       600.4209        82.4333         -65728.0379      4366.8330         0.0000         0.0000     20928.4659         -37667.3100       446.5037    -58595.7759    -37622.8502       448.2705           -192.9599      -179.2809    271565.9652        -6.2646        -6.1864
+
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 198000
+LDB: ============= START OF LOAD BALANCING ============== 5534.85
+LDB: ============== END OF LOAD BALANCING =============== 5534.85
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5534.85
+LDB: ============= START OF LOAD BALANCING ============== 5535.1
+LDB: TIME 5535.1 LOAD: AVG 0.0773347 MAX 0.143612  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 None MEM: 602.719 MB
+LDB: TIME 5535.1 LOAD: AVG 0.0773347 MAX 0.143612  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: TIME 5535.1 LOAD: AVG 0.0773347 MAX 0.143612  PROXIES: TOTAL 99 MAXPE 14 MAXPATCH 5 RefineTorusLB MEM: 602.719 MB
+LDB: Reverting to original mapping
+LDB: ============== END OF LOAD BALANCING =============== 5535.1
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5535.1
+PRESSURE: 200000 341.274 -443.15 37.031 -443.15 15.191 -165.818 37.0326 -165.819 36.8835
+GPRESSURE: 200000 297.448 -352.779 16.3955 -428.703 60.2275 -84.693 -4.16087 -156.657 90.4792
+PRESSAVG: 200000 -11.9229 17.4748 15.229 17.4748 11.1152 -12.2996 15.229 -12.2996 -11.7424
+GPRESSAVG: 200000 -11.9956 17.646 15.2357 17.2747 11.1798 -11.5307 14.8843 -12.4515 -11.3473
+TIMING: 200000  CPU: 3755.13, 0.00580059/step  Wall: 5523.5, 0.00700669/step, 0 hours remaining, 603.093750 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  200000       534.0894      1505.3302       606.1807        88.1889         -65604.9639      4228.5366         0.0000         0.0000     20922.1801         -37720.4579       446.3696    -58642.6380    -37647.5135       450.1949            131.1161       149.3850    271031.4807        -4.1834        -4.0543
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 200000
+WRITING COORDINATES TO DCD FILE 450k_6_mutata2.dcd AT STEP 200000
+WRITING COORDINATES TO RESTART FILE AT STEP 200000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 200000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=200000) takes 0.019 seconds, 603.094 MB of memory in use
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 200000
+CLOSING EXTENDED SYSTEM TRAJECTORY FILE
+WRITING COORDINATES TO OUTPUT FILE AT STEP 200000
+CLOSING COORDINATE DCD FILE 450k_6_mutata2.dcd
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 200000
+The last velocity output (seq=-2) takes 0.012 seconds, 603.344 MB of memory in use
+====================================================
+
+WallClock: 5548.117676  CPUTime: 3779.223145  Memory: 603.343750 MB
+[Partition 0][Node 0] End of program
